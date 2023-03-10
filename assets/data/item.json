@@ -1,0 +1,113 @@
+[
+    {
+        "id": 1,
+        "name": "The Sad Onion",
+        "sub": "Tears up",
+        "quality": 3,
+        "stats": {
+            "tears": "+0.7"
+        },
+        "effects": []
+    },
+    {
+        "id": 2,
+        "name": "The Inner Eye",
+        "sub": "Triple shot",
+        "quality": 2,
+        "stats": {
+            "tears multiplier": "x0.51"
+        },
+        "effects": ["Triple shot"]
+    },
+    {
+        "id": 3,
+        "name": "Spoon Bender",
+        "sub": "Homing shots",
+        "quality": 3,
+        "stats": {
+            
+        },
+        "effects": ["Homing tears"]
+    },
+    {
+        "id": 4,
+        "name": "Cricket's Head",
+        "sub": "DMG up",
+        "quality": 4,
+        "stats": {
+            "damage": "+0.5",
+            "damage multiplier": "x1.5"
+        },
+        "effects": []
+    },
+    {
+        "id": 5,
+        "name": "My Reflection",
+        "sub": "Boomerang tears + DMG up + luck down",
+        "quality": 2,
+        "stats": {
+            "damage": "+1.5",
+            "range": "2x +1.5",
+            "luck": "-1",
+            "shot speed multiplier": "x1.6" 
+        },
+        "effects": ["Boomerang tears"]
+    },
+    {
+        "id": 6,
+        "name": "Number One",
+        "sub": "Tears up + range down",
+        "quality": 2,
+        "stats": {
+            "tears": "+1.5",
+            "range": "-1.5",
+            "range multiplier": "x0.8"
+        },
+        "effects": []
+    },
+    {
+        "id": 7,
+        "name": "Blood of the Martyr",
+        "sub": "DMG up",
+        "quality": 3,
+        "stats": {
+            "damage": "+1"
+        },
+        "effects": []
+    },
+    {
+        "id": 8,
+        "name": "Brother Bobby",
+        "sub": "Friends 'till the end",
+        "quality": 1,
+        "stats": {
+        },
+        "effects": ["Spawns a familiar that deals 3.5 damage per tear"]
+    },
+    {
+        "id": 9,
+        "name": "Skatole",
+        "sub": "Fly love",
+        "quality": 0,
+        "stats": {
+        },
+        "effects": ["Fly ennemies alter their behavior toward Isaac"]
+    },
+    {
+        "id": 10,
+        "name": "Halo of Flies",
+        "sub": "Projectile protection",
+        "quality": 2,
+        "stats": {
+        },
+        "effects": ["Spawns two Pretty Flies"]
+    },
+    {
+        "id": 11,
+        "name": "1up!",
+        "sub": "Extra life",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Gives Isaac an extra life"]
+    }
+]
