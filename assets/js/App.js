@@ -126,7 +126,7 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <input id="search" onChange={this.props.onChange}/>
+      <input id="search" onChange={this.props.onChange} onKeyPress={this.props.onKeyPress}/>
     )
   }
 }
@@ -137,7 +137,8 @@ class App extends React.Component {
     this.state = {
       isLoaded: false,
       currentItem: 0,
-      search: ""
+      search: "",
+      searchId: ""
     }
     this.loadItems()
     this.handleSearchName = this.handleSearchName.bind(this)
@@ -223,16 +224,23 @@ class App extends React.Component {
     }
   }
 
-  //Supprimer la recherche nom doit laisser sur le meme item
-  //Supprimer la recherche id ne doit pas changer l'item
-
   handleSearchId(event) {
     const search = event.target.value
+    const prevSearch = this.state.searchId
+    this.setState({searchId: search})
     if (search) {
-      let i = this.items.findIndex(item => item.id == search)
-      this.setState({
-        currentItem: i
-      })
+      if (search.length >= prevSearch.length || this.state.currentItem == -1){
+        let i = this.items.findIndex(item => item.id == search)
+        this.setState({
+          currentItem: i
+        })
+      }
+    }
+  }
+
+  handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      this.handleSearchId(event);
     }
   }
 
@@ -261,7 +269,7 @@ class App extends React.Component {
       <div>
         <ItemShowcase prev={this.previousItem} next={this.nextItem} item={item}/>
         <SearchBar onChange={this.handleSearchName}/>
-        <SearchBar onChange={this.handleSearchId}/>
+        <SearchBar onChange={this.handleSearchId} onKeyPress={this.handleKeyPress}/>
       </div>
     )
   }
