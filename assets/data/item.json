@@ -7,7 +7,9 @@
         "stats": {
             "tears": "+0.7"
         },
-        "effects": []
+        "effects": [],
+        "set": [],
+        "pool": ["Treasure room"]
     },
     {
         "id": 2,
@@ -17,7 +19,9 @@
         "stats": {
             "tears multiplier": "x0.51"
         },
-        "effects": ["Triple shot"]
+        "effects": ["Triple shot"],
+        "set": [],
+        "pool": ["Treasure room"]        
     },
     {
         "id": 3,
@@ -27,7 +31,9 @@
         "stats": {
             
         },
-        "effects": ["Homing tears"]
+        "effects": ["Homing tears"],
+        "set":[],
+        "pool": ["Treasure room"]
     },
     {
         "id": 4,
@@ -38,7 +44,9 @@
             "damage": "+0.5",
             "damage multiplier": "x1.5"
         },
-        "effects": []
+        "effects": [],
+        "set":[],
+        "pool": ["Treasure room"]
     },
     {
         "id": 5,
@@ -51,7 +59,9 @@
             "luck": "-1",
             "shot speed multiplier": "x1.6" 
         },
-        "effects": ["Boomerang tears"]
+        "effects": ["Boomerang tears"],
+        "set":[],
+        "pool": ["Treasure room"]
     },
     {
         "id": 6,
@@ -63,7 +73,9 @@
             "range": "-1.5",
             "range multiplier": "x0.8"
         },
-        "effects": []
+        "effects": [],
+        "set":[],
+        "pool": ["Treasure room"]
     },
     {
         "id": 7,
@@ -73,7 +85,9 @@
         "stats": {
             "damage": "+1"
         },
-        "effects": []
+        "effects": [],
+        "set":[],
+        "pool": ["Treasure room", "Angel room"]
     },
     {
         "id": 8,
@@ -82,7 +96,9 @@
         "quality": 1,
         "stats": {
         },
-        "effects": ["Spawns a familiar that deals 3.5 damage per tear"]
+        "effects": ["Spawns a familiar that deals 3.5 damage per tear"],
+        "set": ["Conjoined"],
+        "pool": ["Treasure room", "Devil room"]
     },
     {
         "id": 9,
@@ -91,7 +107,9 @@
         "quality": 0,
         "stats": {
         },
-        "effects": ["Fly ennemies alter their behavior toward Isaac"]
+        "effects": ["Fly ennemies alter their behavior toward Isaac"],
+        "set": ["Beelzebub", "Oh Crap"],
+        "pool": ["Shell game"]
     },
     {
         "id": 10,
@@ -100,7 +118,9 @@
         "quality": 2,
         "stats": {
         },
-        "effects": ["Spawns two Pretty Flies"]
+        "effects": ["Spawns two Pretty Flies"],
+        "set": ["Beelzebub"],
+        "pool": ["Treasure room"]
     },
     {
         "id": 11,
@@ -108,6 +128,540 @@
         "sub": "Extra life",
         "quality": 2,
         "stats": {},
-        "effects": ["Gives Isaac an extra life"]
+        "effects": ["Gives Isaac an extra life"],
+        "set": ["Fun Guy"],
+        "pool": ["Secret room"]
+    },
+    {
+        "id": 12,
+        "name": "Magic Mushroom",
+        "sub": "All stats up!",
+        "quality": 4,
+        "stats": {
+            "damage": "+0.3",
+            "damage multiplier": "x1.5",
+            "range": "+2.5",
+            "speed": "+0.3",
+            "hp": "+1" 
+        },
+        "effects": ["Makes Isaac bigger", "Full health"],
+        "set": ["Stompy", "Fun Guy"],
+        "pool": ["Treasure room", "Ultra secret room"]
+    },
+    {
+        "id": 13,
+        "name": "The Virus",
+        "sub": "Poison touch + speed up",
+        "quality": 2,
+        "stats": {
+            "speed": "+0.2"
+        },
+        "effects": ["Isaac deals damage and applies poison on contact"],
+        "set": ["Spun"],
+        "pool": ["Treasure room", "Ultra secret room"]
+    },
+    {
+        "id": 14,
+        "name": "Roid Rage",
+        "sub": "Speed and range up",
+        "quality": 2,
+        "stats": {
+            "speed":"+0.3",
+            "range":"+2.5"
+        },
+        "effects": [],
+        "set": ["Spun"],
+        "pool": ["Treasure room", "Boss"]
+    },
+    {
+        "id": 15,
+        "name": "<3",
+        "sub": "HP up",
+        "quality": 2,
+        "stats": {
+            "hp": "+1"
+        },
+        "effects": ["Full health"],
+        "set": [],
+        "pool": ["Treasure room", "Ultra secret room"]
+    },
+    {
+        "id": 16,
+        "name": "Raw Liver",
+        "sub": "HP up",
+        "quality": 2,
+        "stats": {
+            "hp":"+2"
+        },
+        "effects": ["Full health"],
+        "set": [],
+        "pool": ["Secret room"]
+    },
+    {
+        "id": 17,
+        "name": "Skeleton Key",
+        "sub": "99 keys",
+        "quality": 3,
+        "stats": {},
+        "effects": ["Gives Isaac 99 keys"],
+        "set": [],
+        "pool": ["Treasure room", "Secret room"]
+    },
+    {
+        "id": 18,
+        "name": "A Dollar",
+        "sub": "$$$",
+        "quality": 3,
+        "stats": {},
+        "effects": ["Gives Isaac 100 pennies"],
+        "set": [],
+        "pool": ["Slot machine"]
+    },
+    {
+        "id": 19,
+        "name": "Boom!",
+        "sub": "10 bombs",
+        "quality": 0,
+        "stats": {},
+        "effects": ["Gives Isaac 10 bombs"],
+        "set": [],
+        "pool": ["Treasure room"]
+    },
+    {
+        "id": 20,
+        "name": "Transcendence",
+        "sub": "We all float down here...",
+        "quality": 3,
+        "stats": {},
+        "effects": ["Grants flight"],
+        "set": [],
+        "pool": ["Secret room"]
+    },
+    {
+        "id": 21,
+        "name": "The Compass",
+        "sub": "The end is near",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Reveals all special rooms on the map"],
+        "set": [],
+        "pool": ["Shop"]
+    },
+    {
+        "id": 22,
+        "name": "Lunch",
+        "sub": "HP up",
+        "quality": 1,
+        "stats": {
+            "hp":"+1"
+        },
+        "effects": ["Heals one red heart"],
+        "set": [],
+        "pool": ["Boss"]
+    },
+    {
+        "id": 23,
+        "name": "Dinner",
+        "sub": "HP up",
+        "quality": 1,
+        "stats": {
+            "hp":"+1"
+        },
+        "effects": ["Heals one red heart"],
+        "set": [],
+        "pool": ["Boss"]
+    },
+    {
+        "id": 24,
+        "name": "Dessert",
+        "sub": "HP up",
+        "quality": 1,
+        "stats": {
+            "hp":"+1"
+        },
+        "effects": ["Heals one red heart"],
+        "set": [],
+        "pool": ["Boss"]
+    },
+    {
+        "id": 25,
+        "name": "Breakfast",
+        "sub": "HP up",
+        "quality": 1,
+        "stats": {
+            "hp":"+1"
+        },
+        "effects": ["Heals one red heart"],
+        "set": [],
+        "pool": ["Boss"]
+    },
+    {
+        "id": 26,
+        "name": "Rotten Meat",
+        "sub": "HP up",
+        "quality": 1,
+        "stats": {
+            "hp":"+1"
+        },
+        "effects": ["Heals one red heart"],
+        "set": [],
+        "pool": ["Boss"]
+    },
+    {
+        "id": 27,
+        "name": "Wooden Spoon",
+        "sub": "Speed up",
+        "quality": 1,
+        "stats": {
+            "speed":"+0.3"
+        },
+        "effects": [],
+        "set": [],
+        "pool": ["Boss"]
+    },
+    {
+        "id": 28,
+        "name": "The Belt",
+        "sub": "Speed up",
+        "quality": 1,
+        "stats": {
+            "speed":"+0.3"
+        },
+        "effects": [],
+        "set": [],
+        "pool": ["Boss"]
+    },
+    {
+        "id": 29,
+        "name": "Mom's Underwear",
+        "sub": "Range up",
+        "quality": 1,
+        "stats": {
+            "range":"+2.5"
+        },
+        "effects": ["Spanws 3-6 Blue Flies"],
+        "set": ["Yes Mother?"],
+        "pool": ["Boss"]
+    },
+    {
+        "id": 30,
+        "name": "Mom's Heels",
+        "sub": "Range up",
+        "quality": 1,
+        "stats": {
+            "range":"+2.5"
+        },
+        "effects": ["Isaac deals contact damage"],
+        "set": ["Yes Mother?"],
+        "pool": ["Boss", "Ultra secret room"]
+    },
+    {
+        "id": 31,
+        "name": "Mom's Lipstick",
+        "sub": "Range up",
+        "quality": 1,
+        "stats": {
+            "range":"+3.75"
+        },
+        "effects": ["Spanws a random heart"],
+        "set": ["Yes Mother?"],
+        "pool": ["Boss", "Ultra secret room"]
+    },
+    {
+        "id": 32,
+        "name": "Wire Coat Hanger",
+        "sub": "Tears up",
+        "quality": 3,
+        "stats": {
+            "tears":"+0.7"
+        },
+        "effects": [],
+        "set": [],
+        "pool": ["Boss"]
+    },
+    {
+        "id": 33,
+        "name": "The Bible",
+        "sub": "Temporary flight",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Grants flight for the current room", "Insta kills Mom, Mom's Heart and It Lives","Insta kills Isaac when used on Satan"],
+        "set": ["Seraphim", "Bookworm"],
+        "pool": ["Shop", "Angel room", "Library"],
+        "charge": "4"
+    },
+    {
+        "id": 34,
+        "name": "The Book Of Belial",
+        "sub": "Temporary DMG up",
+        "quality": 2,
+        "stats": {
+            "deal chance":"+12.5%"
+        },
+        "effects": ["+2 damage for the current room"],
+        "set": ["Bookworm"],
+        "pool": ["Devil room", "Library"],
+        "charge": "3"
+    },
+    {
+        "id": 35,
+        "name": "The Necronomicon",
+        "sub": "Mass room damage",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Deals 40 damage to every enemy in the room"],
+        "set": ["Bookworm"],
+        "pool": ["Secret room", "Devil room", "Library"],
+        "charge": "4"
+    },
+    {
+        "id": 36,
+        "name": "The Poop",
+        "sub": "Plop!",
+        "quality": 0,
+        "stats": {},
+        "effects": ["Spawns a poop"],
+        "set": ["Oh Crap"],
+        "pool": ["Treasure room"],
+        "charge": "1"
+    },
+    {
+        "id": 37,
+        "name": "Mr. Boom",
+        "sub": "Reusable bomb buddy",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Place a large bomb"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "charge": "2"
+    },
+    {
+        "id": 38,
+        "name": "Tammy's Head",
+        "sub": "Reusable tear burst",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Shoots 10 tears around Isaac"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "charge": "1"
+    },
+    {
+        "id": 39,
+        "name": "Mom's Bra",
+        "sub": "Mass paralysis",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Petrifies all enemies in the current room"],
+        "set": ["Yes Mother?"],
+        "pool": ["Treasure room"],
+        "charge": "3"
+    },
+    {
+        "id": 40,
+        "name": "Kamikaze!",
+        "sub": "Become the bomb!",
+        "quality": 0,
+        "stats": {},
+        "effects": ["Creates an explosion on Isaac's position"],
+        "set": [],
+        "pool": ["Treasure room", "Ultra secret room"],
+        "charge": "Unlimited"
+    },
+    {
+        "id": 41,
+        "name": "Mom's Pad",
+        "sub": "Mass fear",
+        "quality": 0,
+        "stats": {},
+        "effects": ["Inflicts fear on all enemies in the room", "Spawns 1 blue fly"],
+        "set": ["Yes Mother?"],
+        "pool": ["Treasure room"],
+        "charge": "2"
+    },
+    {
+        "id": 42,
+        "name": "Bob's Rotten Head",
+        "sub": "Reusable ranged bomb",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Isaac hold a poison bomb that can be thrown"],
+        "set": ["Bob"],
+        "pool": ["Treasure room"],
+        "charge": "2"
+    },
+    {
+        "id": 44,
+        "name": "Teleport!",
+        "sub": "Teleport!",
+        "quality": 0,
+        "stats": {},
+        "effects": ["Teleports Isaac to a random room"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "charge": "2"
+    },
+    {
+        "id": 45,
+        "name": "Yum Heart",
+        "sub": "Reusable regeneration",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Heals one red heart"],
+        "set": [],
+        "pool": ["Treasure room", "Ultra secret room"],
+        "charge": "4"
+    },
+    {
+        "id": 46,
+        "name": "Lucky Foot",
+        "sub": "Luck up",
+        "quality": 2,
+        "stats": {
+            "luck":"+1"
+        },
+        "effects": ["Increase chances of winning at lottery events", "Convert bad pills into good pills", "Increase room-clearing drops"],
+        "set": [],
+        "pool": ["Treasure room"]
+    },
+    {
+        "id": 47,
+        "name": "Doctor's Remote",
+        "sub": "Reusable air strike",
+        "quality": 1,
+        "stats": {},
+        "effects": ["A controllable crosshair appears on the ground", "After 2 seconds, drops a large missile on the crosshair"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "charge": "2"
+    },
+    {
+        "id": 48,
+        "name": "Cupid's Arrow",
+        "sub": "Piercing shots",
+        "quality": 3,
+        "stats": {},
+        "effects": ["Piercing tears"],
+        "set": [],
+        "pool": ["Treasure room"]
+    },
+    {
+        "id": 49,
+        "name": "Shoop Da Whoop!",
+        "sub": "Blllarrrrggg!",
+        "quality": 2,
+        "stats": {},
+        "effects": ["The next shot will fire a large brimstone-like laser"],
+        "set": [],
+        "pool": ["Treasure room", "Ultra secret room"],
+        "charge": "2"
+    },
+    {
+        "id": 50,
+        "name": "Steven",
+        "sub": "DMG up",
+        "quality": 3,
+        "stats": {
+            "damage":"+1"
+        },
+        "effects": [],
+        "set": [],
+        "pool": ["Steven (boss)"]
+    },
+    {
+        "id": 51,
+        "name": "Pentagram",
+        "sub": "DMG up",
+        "quality": 3,
+        "stats": {
+            "damage":"+1",
+            "deal chance":"+10%"
+        },
+        "effects": [],
+        "set": ["Leviathan"],
+        "pool": ["Devil room", "Curse room", "Ultra secret room", "Boss"]
+    },
+    {
+        "id": 52,
+        "name": "Dr. Fetus",
+        "sub": "???",
+        "quality": 4,
+        "stats": {},
+        "effects": ["Tears are replaced by bombs"],
+        "set": [],
+        "pool": ["Treasure room"]
+    },
+    {
+        "id": 53,
+        "name": "Magneto",
+        "sub": "Item snatcher",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Pulls pichups towards Isaac"],
+        "set": [],
+        "pool": ["Treasure room", "Ultra secret room"]
+    },
+    {
+        "id": 54,
+        "name": "Treasure Map",
+        "sub": "Full visible map",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Reveals the floor layout"],
+        "set": [],
+        "pool": ["Shop"]
+    },
+    {
+        "id": 55,
+        "name": "Mom's Eye",
+        "sub": "Eye in the back of your head",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Isaac has a chance to fire a tear backward"],
+        "set": ["Yes Mother?"],
+        "pool": ["Treasure room"]
+    },
+    {
+        "id": 56,
+        "name": "Lemon Mishap",
+        "sub": "Oops...",
+        "quality": 0,
+        "stats": {},
+        "effects": ["Create a tiny pool of yellow creep"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "charge":"2"
+    },
+    {
+        "id": 57,
+        "name": "Distant Admiration",
+        "sub": "Attack fly",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Spawns a red fly that circles around Isaac"],
+        "set": ["Beelzebub"],
+        "pool": ["Treasure room"]
+    },
+    {
+        "id": 58,
+        "name": "Book of Shadows",
+        "sub": "Temporary invincibility",
+        "quality": 3,
+        "stats": {},
+        "effects": ["Makes Isaac invincible for 10 seconds"],
+        "set": ["Bookworm"],
+        "pool": ["Treasure room", "Library"],
+        "charge":"3"
+    },
+    {
+        "id": 60,
+        "name": "The Ladder",
+        "sub": "Building bridges",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Isaac can walk across 1 square gaps"],
+        "set": [],
+        "pool": ["Shop"]
     }
 ]
