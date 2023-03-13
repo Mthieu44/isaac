@@ -1,0 +1,11 @@
+#searchSection {
+    position: absolute;
+    bottom: 50px;
+    background-image: url("../images/paper_small.png");
+    background-size:cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12%;
+    width: calc(100vh * 0.73);
+}
