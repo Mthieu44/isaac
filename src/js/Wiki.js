@@ -121,10 +121,10 @@ class App extends React.Component {
       item = this.items[this.state.currentItem]
     }
     return (
-      <div id="content">
+      <>
         <ItemShowcase prev={this.previousItem} next={this.nextItem} item={item}/>
         <Search searchName={this.handleSearchName} searchId={this.handleSearchId} keyPress={this.handleKeyPress}/>
-      </div>
+      </>
     )
   }
 }
