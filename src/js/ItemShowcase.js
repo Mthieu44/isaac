@@ -1,8 +1,12 @@
-// Composant Item
+import React from "react";  
+import larrow from '../images/arrow_left.png'
+import rarrow from '../images/arrow_right.png'
+import pedestal from '../images/pedestal.png'
+
 class ItemImage extends React.Component {
 
     getTitle = (str) => {
-        if (str == "<3"){return "less_than_three"}
+        if (str === "<3"){return "less_than_three"}
         str = str.replace(/\s+/g, '_')
         str = str.toLowerCase();
         str = str.replace(/[^a-z0-9_]/g, '');
@@ -10,26 +14,26 @@ class ItemImage extends React.Component {
     }
 
     getUrl = (str) => {
-        if (str == "<3"){return "https://bindingofisaacrebirth.fandom.com/wiki/Less_Than_Three"}
+        if (str === "<3"){return "https://bindingofisaacrebirth.fandom.com/wiki/Less_Than_Three"}
         str = str.replace(/\s+/g, '_')
         str = encodeURIComponent(str)
         return "https://bindingofisaacrebirth.fandom.com/wiki/" + str;
     }
 
     render() {
-        let base_src = "assets/images/items/"
+        let image = require("../images/items/" + this.getTitle(this.props.src) + ".png")
         return (
         <div id="item">
-            <a target="_blank" href={this.props.src=="questionmark"? "https://bindingofisaacrebirth.fandom.com/wiki/Items":this.getUrl(this.props.src)} title="Click to see more details">
-            <img id="pic" src={base_src + this.getTitle(this.props.src) + ".png"} alt="Item image"/>
+            <a target="_blank" rel="noreferrer" href={this.props.src==="questionmark"? "https://bindingofisaacrebirth.fandom.com/wiki/Items":this.getUrl(this.props.src)} title="Click to see more details">
+                <img id="pic" src={image} alt="Item"/>
             </a>
-            <img id="pedestal" alt="pedestal" src="assets/images/pedestal.png"/>
+            <img id="pedestal" alt="pedestal" src={pedestal}/>
         </div>
         )
     }
-    }
+}
 
-    class ItemName extends React.Component {
+class ItemName extends React.Component {
     render() {
         return (
         <div className="top">
@@ -39,9 +43,9 @@ class ItemImage extends React.Component {
         </div>
         )
     }
-    }
+}
 
-    class ItemDesc extends React.Component {
+class ItemDesc extends React.Component {
     render() {
         let stats = this.props.stats;
         let effects = this.props.effects;
@@ -63,30 +67,29 @@ class ItemImage extends React.Component {
         </div>
         );
     }
-    }
+}
 
-    class NextArrow extends React.Component {
+class NextArrow extends React.Component {
     render() {
         return (
         <div id="arrow_right">
-            <img src="assets/images/arrow_right.png" alt="Next" onClick={this.props.onClick}/>
+            <img src={rarrow} alt="Next" onClick={this.props.onClick}/>
         </div>
         )
     }
-    }
+}
 
-    class PrevArrow extends React.Component {
+class PrevArrow extends React.Component {
     render() {
         return (
         <div id="arrow_left">
-            <img src="assets/images/arrow_left.png" alt="Previous" onClick={this.props.onClick}/>
+            <img src={larrow} alt="Previous" onClick={this.props.onClick}/>
         </div>
         )
     }
-    }
+}
 
-    // Composant App
-    class ItemShowcase extends React.Component {
+class ItemShowcase extends React.Component {
     render() {
         return (
         <div id="itemSection">
@@ -101,3 +104,5 @@ class ItemImage extends React.Component {
         );
     }
 }
+
+export default ItemShowcase

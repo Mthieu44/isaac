@@ -1,51 +1,28 @@
-const itemDao = {
-  async findAll() {
-      const response = await fetch('../assets/data/item.json',
-  {
-    headers : { 
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'
-     }
-  })
-  const data = await response.json()
-  return data
-  }
-}
-
+import ItemShowcase from './ItemShowcase';
+import Search from './Search';
+import React from 'react';
+import Items from '../items.json'
 class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      isLoaded: false,
       currentItem: 0,
       search: "",
       searchId: ""
     }
-    this.loadItems()
+    this.allItems = Items
+    this.items = this.allItems
     this.handleSearchName = this.handleSearchName.bind(this)
     this.handleSearchId = this.handleSearchId.bind(this)
-  }
-
-  async loadItems() {
-    try {
-      const items = await itemDao.findAll()
-      this.allItems = items
-      this.items = this.allItems
-      this.setState({
-        isLoaded: true,
-      })
-    } catch (error) {
-      console.error(error)
-    }
   }
 
   previousItem = () => {
     let c = this.state.currentItem
     c -= 1
-    if (c == -1){
+    if (c === -1){
       c = this.items.length - 1
     }
-    if (c == -2){
+    if (c === -2){
       c = -1
     }
     this.setState({ currentItem: c});
@@ -54,10 +31,10 @@ class App extends React.Component {
   nextItem = () => {
     let c = this.state.currentItem
     c += 1
-    if (c == 0){
+    if (c === 0){
       c = -1
     }
-    if (c == this.items.length){
+    if (c === this.items.length){
       c = 0
     }
     this.setState({ currentItem: c});
@@ -68,7 +45,7 @@ class App extends React.Component {
     const prevSearch = this.state.search
     this.setState({search: search})
     if (search) {
-      if (search.length < prevSearch.length && this.state.currentItem != -1){
+      if (search.length < prevSearch.length && this.state.currentItem !== -1){
         let id = this.items[this.state.currentItem].id
         this.items = this.allItems.filter((item) => item.name.toLowerCase().includes(search.toLowerCase()))
         this.setState({
@@ -76,20 +53,18 @@ class App extends React.Component {
         });
       }else{
         this.items = this.allItems.filter((item) => item.name.toLowerCase().includes(search.toLowerCase()))
-        if (this.items.length == 0){
+        if (this.items.length === 0){
           this.setState({
-            isLoaded: true,
             currentItem: -1
           });
         }else{
           this.setState({
-            isLoaded: true,
             currentItem: 0
           });
         }
       }
     } else {
-      if (this.items.length != 0 && this.state.currentItem != -1){
+      if (this.items.length !== 0 && this.state.currentItem !== -1){
         let id = this.items[this.state.currentItem].id
         this.items = this.allItems
         this.setState({
@@ -110,14 +85,14 @@ class App extends React.Component {
     const prevSearch = this.state.searchId
     this.setState({searchId: search})
     if (search) {
-      if (search.length >= prevSearch.length || this.state.currentItem == -1){
-        let i = this.items.findIndex(item => item.id == search)
+      if (search.length >= prevSearch.length || this.state.currentItem === -1){
+        let i = this.items.findIndex(item => item.id.toString() === search)
         this.setState({
           currentItem: i
         })
       }
     }else{
-      if (this.state.currentItem == -1){
+      if (this.state.currentItem === -1){
         this.setState({
           currentItem: 0
         })
@@ -132,13 +107,6 @@ class App extends React.Component {
   }
 
   render() {
-    if (!this.state.isLoaded) {
-      return (
-        <div id="content">
-          
-        </div>
-      );
-    }
     let item = {
       id:"0",
       name: "No item",
@@ -149,7 +117,7 @@ class App extends React.Component {
       set: [],
       pool: []
     };
-    if (this.items.length != 0 && this.state.currentItem != -1){
+    if (this.items.length !== 0 && this.state.currentItem !== -1){
       item = this.items[this.state.currentItem]
     }
     return (
@@ -161,7 +129,4 @@ class App extends React.Component {
   }
 }
 
-const root = ReactDOM.createRoot(document.querySelector('#app'));
-root.render(
-    <App/>
-);
+export default App;

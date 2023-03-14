@@ -1,3 +1,5 @@
+import React from "react"
+
 class SearchBar extends React.Component {
     constructor(props){
       super(props)
@@ -7,7 +9,7 @@ class SearchBar extends React.Component {
   
     render() {
       return (
-        <input id="search" onChange={this.props.onChange} onKeyPress={this.props.onKeyPress}/>
+        <input id="search" onChange={this.props.onChange} onKeyDown={this.props.onKeyPress}/>
       )
     }
   }
@@ -21,4 +23,6 @@ class Search extends React.Component{
             </div>
         )
     }
-} 
+}
+
+export default Search
