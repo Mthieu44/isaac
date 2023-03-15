@@ -1,7 +1,9 @@
 import ItemShowcase from './ItemShowcase';
 import Search from './Search';
 import React from 'react';
-import Items from '../items.json'
+import Items from '../items.json';
+
+
 class App extends React.Component {
   constructor(props){
     super(props)

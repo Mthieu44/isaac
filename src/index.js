@@ -10,7 +10,6 @@ import Root from './js/Root';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
-  Link,
   RouterProvider,
 } from "react-router-dom";
 

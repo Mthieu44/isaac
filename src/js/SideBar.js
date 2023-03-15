@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 class SideBar extends React.Component {
@@ -10,13 +10,50 @@ class SideBar extends React.Component {
                 <nav>
                     <ul>
                         <li>
-                            <Link to={'/wiki'}>Wiki</Link>
+                            <NavLink
+                                to={`/wiki`}
+                                className={({ isActive, isPending }) =>
+                                    isActive
+                                    ? "active"
+                                    : isPending
+                                    ? "pending"
+                                    : ""
+                                }
+                            >
+                                <div className="zizi"></div>
+                                <p>Wiki</p>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link to={'/isaacdle'}>Isaacdle</Link>
+                            <NavLink
+                                to={`/isaacdle`}
+                                className={({ isActive, isPending }) =>
+                                    isActive
+                                    ? "active"
+                                    : isPending
+                                    ? "pending"
+                                    : ""
+                                }
+                            >
+                                <div className="zizi"></div>
+                                <p>Isaacdle</p>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link to={'/guessall'}>Guess all</Link>
+                            <NavLink
+                                to={`/guessall`}
+                                className={({ isActive, isPending }) =>
+                                    isActive
+                                    ? "active"
+                                    : isPending
+                                    ? "pending"
+                                    : ""
+                                }
+                            >
+                                <div className="zizi"></div>
+                                <p>Guess All</p>
+                                
+                            </NavLink>
                         </li>
                     </ul>
                 </nav>
