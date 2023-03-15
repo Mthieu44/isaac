@@ -51,6 +51,23 @@ nav a:hover .arrowmenu {
     opacity: 0.5;
 }
 
-  
+#themeswitch {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: -70px;
+}
 
+#themeswitch p{
+    color:#333333;
+    font-family: teammeat;
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#themeswitch p:hover {
+    text-decoration: underline;
+}
 

@@ -4,7 +4,7 @@ import React from 'react';
 import Items from '../items.json';
 
 
-class App extends React.Component {
+class Wiki extends React.Component {
   constructor(props){
     super(props)
     this.state = {
@@ -131,4 +131,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Wiki;

@@ -21,9 +21,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("../images/background.png");
   image-rendering: pixelated;
   background-size: cover;
+}
+
+.light {
+  background-image: url("../images/background.png");
+}
+
+.dark {
+  background-image: url("../images/background_dark.png");
 }
 
 

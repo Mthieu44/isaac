@@ -13,6 +13,21 @@ class SideBar extends React.Component {
                     <ul>
                         <li>
                             <NavLink
+                                to={`/`}
+                                className={({ isActive, isPending }) =>
+                                    isActive
+                                    ? "active"
+                                    : isPending
+                                    ? "pending"
+                                    : ""
+                                }
+                            >
+                                <img src={fleche} alt="arrow" className="arrowmenu"/>
+                                <p>Home</p>
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
                                 to={`/wiki`}
                                 className={({ isActive, isPending }) =>
                                     isActive
@@ -59,6 +74,9 @@ class SideBar extends React.Component {
                         </li>
                     </ul>
                 </nav>
+                <div id="themeswitch">
+                    <p onClick={this.props.onClick}>Switch to {this.props.to} theme</p>
+                </div>
             </div>
         )
     }
