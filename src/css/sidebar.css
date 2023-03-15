@@ -16,7 +16,7 @@
     margin-right: auto;
 }
 
-#sidebar ul {
+nav ul {
     list-style-type: none;
 }
 
@@ -29,29 +29,28 @@ nav a {
     flex-direction: row;
     justify-content: left;
     align-items: center;
+    width: fit-content;
 }
 
-#sidebar a p {
+nav a p {
     margin: 0;
     margin-left: 10px;
 }
 
-.zizi {
-    border: solid;
-    width: 20px;
+.arrowmenu {
     height: 20px;
+    width: auto;
     opacity: 0;
 }
 
-.active .zizi {
+nav a:hover .arrowmenu {
     opacity: 1;
 }
 
-nav :hover .zizi {
-    opacity: 0;
+.active .arrowmenu {
+    opacity: 0.5;
 }
 
-nav a:hover .zizi {
-    opacity: 1;
-}
   
+
+

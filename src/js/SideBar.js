@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import fleche from "../images/arrow_menu.png"
 
 
 class SideBar extends React.Component {
@@ -20,7 +21,7 @@ class SideBar extends React.Component {
                                     : ""
                                 }
                             >
-                                <div className="zizi"></div>
+                                <img src={fleche} alt="arrow" className="arrowmenu"/>
                                 <p>Wiki</p>
                             </NavLink>
                         </li>
@@ -35,7 +36,7 @@ class SideBar extends React.Component {
                                     : ""
                                 }
                             >
-                                <div className="zizi"></div>
+                                <img src={fleche} alt="arrow" className="arrowmenu"/>
                                 <p>Isaacdle</p>
                             </NavLink>
                         </li>
@@ -50,7 +51,7 @@ class SideBar extends React.Component {
                                     : ""
                                 }
                             >
-                                <div className="zizi"></div>
+                                <img src={fleche} alt="arrow" className="arrowmenu"/>
                                 <p>Guess All</p>
                                 
                             </NavLink>
