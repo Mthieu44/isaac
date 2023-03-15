@@ -1,0 +1,34 @@
+#error-page {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#error-page img {
+    height: 200px;
+    width: auto;
+    margin-bottom: 75px;
+}
+
+#error-page p {
+    color:#333333;
+    font-family: teammeat;
+    font-size: 30px;
+    margin: 0;
+}
+
+#error-page a {
+    color:#333333;
+    font-family: teammeat;
+    font-size: 30px;
+    margin: 0;
+    text-decoration: none;
+}
+
+#error-page a:hover {
+    text-decoration: underline;
+}

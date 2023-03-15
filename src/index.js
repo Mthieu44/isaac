@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/index.css';
-import './css/itemSection.css';
-import './css/searchSection.css';
-import './css/sidebar.css'
 import Wiki from './js/Wiki';
 import ErrorPage from './js/ErrorPage';
 import Root from './js/Root';

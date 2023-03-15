@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import fleche from "../images/arrow_menu.png"
+import fleche from "../images/arrow_menu.png";
+import '../css/sidebar.css'
 
 
 class SideBar extends React.Component {

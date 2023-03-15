@@ -2,6 +2,7 @@ import React from "react";
 import larrow from '../images/arrow_left.png'
 import rarrow from '../images/arrow_right.png'
 import pedestal from '../images/pedestal.png'
+import '../css/itemSection.css';
 
 class ItemImage extends React.Component {
 
