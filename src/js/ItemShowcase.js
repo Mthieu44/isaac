@@ -25,7 +25,7 @@ class ItemImage extends React.Component {
         let image = require("../images/items/" + this.getTitle(this.props.src) + ".png")
         return (
         <div id="item">
-            <a target="_blank" rel="noreferrer" href={this.props.src==="questionmark"? "https://bindingofisaacrebirth.fandom.com/wiki/Items":this.getUrl(this.props.src)} title="Click to see more details">
+            <a target="_blank" rel="noreferrer" href={this.props.src==="No item"? "https://bindingofisaacrebirth.fandom.com/wiki/Items":this.getUrl(this.props.src)} title="Click to see more details">
                 <img id="pic" src={image} alt="Item"/>
             </a>
             <img id="pedestal" alt="pedestal" src={pedestal}/>

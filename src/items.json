@@ -9,7 +9,8 @@
         },
         "effects": [],
         "set": [],
-        "pool": ["Treasure room"]
+        "pool": ["Treasure room"],
+        "type": "Passive"
     },
     {
         "id": 2,
@@ -21,7 +22,8 @@
         },
         "effects": ["Triple shot"],
         "set": [],
-        "pool": ["Treasure room"]        
+        "pool": ["Treasure room"],
+        "type": "Passive"     
     },
     {
         "id": 3,
@@ -33,7 +35,8 @@
         },
         "effects": ["Homing tears"],
         "set":[],
-        "pool": ["Treasure room"]
+        "pool": ["Treasure room"],
+        "type": "Passive"
     },
     {
         "id": 4,
@@ -46,7 +49,8 @@
         },
         "effects": [],
         "set":[],
-        "pool": ["Treasure room"]
+        "pool": ["Treasure room"],
+        "type": "Passive"
     },
     {
         "id": 5,
@@ -61,7 +65,8 @@
         },
         "effects": ["Boomerang tears"],
         "set":[],
-        "pool": ["Treasure room"]
+        "pool": ["Treasure room"],
+        "type": "Passive"
     },
     {
         "id": 6,
@@ -75,7 +80,8 @@
         },
         "effects": [],
         "set":[],
-        "pool": ["Treasure room"]
+        "pool": ["Treasure room"],
+        "type": "Passive"
     },
     {
         "id": 7,
@@ -87,7 +93,8 @@
         },
         "effects": [],
         "set":[],
-        "pool": ["Treasure room", "Angel room"]
+        "pool": ["Treasure room", "Angel room"],
+        "type": "Passive"
     },
     {
         "id": 8,
@@ -98,7 +105,8 @@
         },
         "effects": ["Spawns a familiar that deals 3.5 damage per tear"],
         "set": ["Conjoined"],
-        "pool": ["Treasure room", "Devil room"]
+        "pool": ["Treasure room", "Devil room"],
+        "type": "Familiar"
     },
     {
         "id": 9,
@@ -109,7 +117,8 @@
         },
         "effects": ["Fly ennemies alter their behavior toward Isaac"],
         "set": ["Beelzebub", "Oh Crap"],
-        "pool": ["Shell game"]
+        "pool": ["Shell game"],
+        "type": "Familiar"
     },
     {
         "id": 10,
@@ -120,7 +129,8 @@
         },
         "effects": ["Spawns two Pretty Flies"],
         "set": ["Beelzebub"],
-        "pool": ["Treasure room"]
+        "pool": ["Treasure room"],
+        "type": "Familiar"
     },
     {
         "id": 11,
@@ -130,7 +140,8 @@
         "stats": {},
         "effects": ["Gives Isaac an extra life"],
         "set": ["Fun Guy"],
-        "pool": ["Secret room"]
+        "pool": ["Secret room"],
+        "type": "Passive"
     },
     {
         "id": 12,
@@ -146,7 +157,8 @@
         },
         "effects": ["Makes Isaac bigger", "Full health"],
         "set": ["Stompy", "Fun Guy"],
-        "pool": ["Treasure room", "Ultra secret room"]
+        "pool": ["Treasure room", "Ultra secret room"],
+        "type": "Passive"
     },
     {
         "id": 13,
@@ -158,7 +170,8 @@
         },
         "effects": ["Isaac deals damage and applies poison on contact"],
         "set": ["Spun"],
-        "pool": ["Treasure room", "Ultra secret room"]
+        "pool": ["Treasure room", "Ultra secret room"],
+        "type": "Passive"
     },
     {
         "id": 14,
@@ -171,7 +184,8 @@
         },
         "effects": [],
         "set": ["Spun"],
-        "pool": ["Treasure room", "Boss"]
+        "pool": ["Treasure room", "Boss"],
+        "type": "Passive"
     },
     {
         "id": 15,
@@ -183,7 +197,8 @@
         },
         "effects": ["Full health"],
         "set": [],
-        "pool": ["Treasure room", "Ultra secret room"]
+        "pool": ["Treasure room", "Ultra secret room"],
+        "type": "Passive"
     },
     {
         "id": 16,
@@ -195,7 +210,8 @@
         },
         "effects": ["Full health"],
         "set": [],
-        "pool": ["Secret room"]
+        "pool": ["Secret room"],
+        "type": "Passive"
     },
     {
         "id": 17,
@@ -205,7 +221,8 @@
         "stats": {},
         "effects": ["Gives Isaac 99 keys"],
         "set": [],
-        "pool": ["Treasure room", "Secret room"]
+        "pool": ["Treasure room", "Secret room"],
+        "type": "Passive"
     },
     {
         "id": 18,
@@ -215,7 +232,8 @@
         "stats": {},
         "effects": ["Gives Isaac 100 pennies"],
         "set": [],
-        "pool": ["Slot machine"]
+        "pool": ["Slot machine"],
+        "type": "Passive"
     },
     {
         "id": 19,
@@ -225,7 +243,8 @@
         "stats": {},
         "effects": ["Gives Isaac 10 bombs"],
         "set": [],
-        "pool": ["Treasure room"]
+        "pool": ["Treasure room"],
+        "type": "Passive"
     },
     {
         "id": 20,
@@ -235,7 +254,8 @@
         "stats": {},
         "effects": ["Grants flight"],
         "set": [],
-        "pool": ["Secret room"]
+        "pool": ["Secret room"],
+        "type": "Passive"
     },
     {
         "id": 21,
@@ -245,7 +265,8 @@
         "stats": {},
         "effects": ["Reveals all special rooms on the map"],
         "set": [],
-        "pool": ["Shop"]
+        "pool": ["Shop"],
+        "type": "Passive"
     },
     {
         "id": 22,
@@ -257,7 +278,8 @@
         },
         "effects": ["Heals one red heart"],
         "set": [],
-        "pool": ["Boss"]
+        "pool": ["Boss"],
+        "type": "Passive"
     },
     {
         "id": 23,
@@ -269,7 +291,8 @@
         },
         "effects": ["Heals one red heart"],
         "set": [],
-        "pool": ["Boss"]
+        "pool": ["Boss"],
+        "type": "Passive"
     },
     {
         "id": 24,
@@ -281,7 +304,8 @@
         },
         "effects": ["Heals one red heart"],
         "set": [],
-        "pool": ["Boss"]
+        "pool": ["Boss"],
+        "type": "Passive"
     },
     {
         "id": 25,
@@ -293,7 +317,8 @@
         },
         "effects": ["Heals one red heart"],
         "set": [],
-        "pool": ["Boss"]
+        "pool": ["Boss"],
+        "type": "Passive"
     },
     {
         "id": 26,
@@ -305,7 +330,8 @@
         },
         "effects": ["Heals one red heart"],
         "set": [],
-        "pool": ["Boss"]
+        "pool": ["Boss"],
+        "type": "Passive"
     },
     {
         "id": 27,
@@ -317,7 +343,8 @@
         },
         "effects": [],
         "set": [],
-        "pool": ["Boss"]
+        "pool": ["Boss"],
+        "type": "Passive"
     },
     {
         "id": 28,
@@ -329,7 +356,8 @@
         },
         "effects": [],
         "set": [],
-        "pool": ["Boss"]
+        "pool": ["Boss"],
+        "type": "Passive"
     },
     {
         "id": 29,
@@ -339,9 +367,10 @@
         "stats": {
             "range":"+2.5"
         },
-        "effects": ["Spanws 3-6 Blue Flies"],
+        "effects": ["Spawns 3-6 Blue Flies"],
         "set": ["Yes Mother?"],
-        "pool": ["Boss"]
+        "pool": ["Boss"],
+        "type": "Passive"
     },
     {
         "id": 30,
@@ -353,7 +382,8 @@
         },
         "effects": ["Isaac deals contact damage"],
         "set": ["Yes Mother?"],
-        "pool": ["Boss", "Ultra secret room"]
+        "pool": ["Boss", "Ultra secret room"],
+        "type": "Passive"
     },
     {
         "id": 31,
@@ -363,9 +393,10 @@
         "stats": {
             "range":"+3.75"
         },
-        "effects": ["Spanws a random heart"],
+        "effects": ["Spawns a random heart"],
         "set": ["Yes Mother?"],
-        "pool": ["Boss", "Ultra secret room"]
+        "pool": ["Boss", "Ultra secret room"],
+        "type": "Passive"
     },
     {
         "id": 32,
@@ -377,7 +408,8 @@
         },
         "effects": [],
         "set": [],
-        "pool": ["Boss"]
+        "pool": ["Boss"],
+        "type": "Passive"
     },
     {
         "id": 33,
@@ -388,7 +420,8 @@
         "effects": ["Grants flight for the current room", "Insta kills Mom, Mom's Heart and It Lives","Insta kills Isaac when used on Satan"],
         "set": ["Seraphim", "Bookworm"],
         "pool": ["Shop", "Angel room", "Library"],
-        "charge": "4"
+        "charge": "4",
+        "type": "Active"
     },
     {
         "id": 34,
@@ -401,7 +434,8 @@
         "effects": ["+2 damage for the current room"],
         "set": ["Bookworm"],
         "pool": ["Devil room", "Library"],
-        "charge": "3"
+        "charge": "3",
+        "type": "Active"
     },
     {
         "id": 35,
@@ -412,7 +446,8 @@
         "effects": ["Deals 40 damage to every enemy in the room"],
         "set": ["Bookworm"],
         "pool": ["Secret room", "Devil room", "Library"],
-        "charge": "4"
+        "charge": "4",
+        "type": "Active"
     },
     {
         "id": 36,
@@ -423,7 +458,8 @@
         "effects": ["Spawns a poop"],
         "set": ["Oh Crap"],
         "pool": ["Treasure room"],
-        "charge": "1"
+        "charge": "1",
+        "type": "Active"
     },
     {
         "id": 37,
@@ -434,7 +470,8 @@
         "effects": ["Place a large bomb"],
         "set": [],
         "pool": ["Treasure room"],
-        "charge": "2"
+        "charge": "2",
+        "type": "Active"
     },
     {
         "id": 38,
@@ -445,7 +482,8 @@
         "effects": ["Shoots 10 tears around Isaac"],
         "set": [],
         "pool": ["Treasure room"],
-        "charge": "1"
+        "charge": "1",
+        "type": "Active"
     },
     {
         "id": 39,
@@ -456,7 +494,8 @@
         "effects": ["Petrifies all enemies in the current room"],
         "set": ["Yes Mother?"],
         "pool": ["Treasure room"],
-        "charge": "3"
+        "charge": "3",
+        "type": "Active"
     },
     {
         "id": 40,
@@ -467,7 +506,8 @@
         "effects": ["Creates an explosion on Isaac's position"],
         "set": [],
         "pool": ["Treasure room", "Ultra secret room"],
-        "charge": "Unlimited"
+        "charge": "Unlimited",
+        "type": "Active"
     },
     {
         "id": 41,
@@ -478,7 +518,8 @@
         "effects": ["Inflicts fear on all enemies in the room", "Spawns 1 blue fly"],
         "set": ["Yes Mother?"],
         "pool": ["Treasure room"],
-        "charge": "2"
+        "charge": "2",
+        "type": "Active"
     },
     {
         "id": 42,
@@ -489,7 +530,8 @@
         "effects": ["Isaac hold a poison bomb that can be thrown"],
         "set": ["Bob"],
         "pool": ["Treasure room"],
-        "charge": "2"
+        "charge": "2",
+        "type": "Active"
     },
     {
         "id": 44,
@@ -500,7 +542,8 @@
         "effects": ["Teleports Isaac to a random room"],
         "set": [],
         "pool": ["Treasure room"],
-        "charge": "2"
+        "charge": "2",
+        "type": "Active"
     },
     {
         "id": 45,
@@ -511,7 +554,8 @@
         "effects": ["Heals one red heart"],
         "set": [],
         "pool": ["Treasure room", "Ultra secret room"],
-        "charge": "4"
+        "charge": "4",
+        "type": "Active"
     },
     {
         "id": 46,
@@ -523,7 +567,8 @@
         },
         "effects": ["Increase chances of winning at lottery events", "Convert bad pills into good pills", "Increase room-clearing drops"],
         "set": [],
-        "pool": ["Treasure room"]
+        "pool": ["Treasure room"],
+        "type": "Passive"
     },
     {
         "id": 47,
@@ -534,7 +579,8 @@
         "effects": ["A controllable crosshair appears on the ground", "After 2 seconds, drops a large missile on the crosshair"],
         "set": [],
         "pool": ["Treasure room"],
-        "charge": "2"
+        "charge": "2",
+        "type": "Active"
     },
     {
         "id": 48,
@@ -544,7 +590,8 @@
         "stats": {},
         "effects": ["Piercing tears"],
         "set": [],
-        "pool": ["Treasure room"]
+        "pool": ["Treasure room"],
+        "type": "Passive"
     },
     {
         "id": 49,
@@ -555,7 +602,8 @@
         "effects": ["The next shot will fire a large brimstone-like laser"],
         "set": [],
         "pool": ["Treasure room", "Ultra secret room"],
-        "charge": "2"
+        "charge": "2",
+        "type": "Active"
     },
     {
         "id": 50,
@@ -567,7 +615,8 @@
         },
         "effects": [],
         "set": [],
-        "pool": ["Steven (boss)"]
+        "pool": ["Steven (boss)"],
+        "type": "Passive"
     },
     {
         "id": 51,
@@ -580,17 +629,21 @@
         },
         "effects": [],
         "set": ["Leviathan"],
-        "pool": ["Devil room", "Curse room", "Ultra secret room", "Boss"]
+        "pool": ["Devil room", "Curse room", "Ultra secret room", "Boss"],
+        "type": "Passive"
     },
     {
         "id": 52,
         "name": "Dr. Fetus",
         "sub": "???",
         "quality": 4,
-        "stats": {},
+        "stats": {
+            "tears multiplier": "x0.4"
+        },
         "effects": ["Tears are replaced by bombs"],
         "set": [],
-        "pool": ["Treasure room"]
+        "pool": ["Treasure room"],
+        "type": "Passive"
     },
     {
         "id": 53,
@@ -598,9 +651,10 @@
         "sub": "Item snatcher",
         "quality": 1,
         "stats": {},
-        "effects": ["Pulls pichups towards Isaac"],
+        "effects": ["Pulls pickups towards Isaac"],
         "set": [],
-        "pool": ["Treasure room", "Ultra secret room"]
+        "pool": ["Treasure room", "Ultra secret room"],
+        "type": "Passive"
     },
     {
         "id": 54,
@@ -610,7 +664,8 @@
         "stats": {},
         "effects": ["Reveals the floor layout"],
         "set": [],
-        "pool": ["Shop"]
+        "pool": ["Shop"],
+        "type": "Passive"
     },
     {
         "id": 55,
@@ -620,7 +675,8 @@
         "stats": {},
         "effects": ["Isaac has a chance to fire a tear backward"],
         "set": ["Yes Mother?"],
-        "pool": ["Treasure room"]
+        "pool": ["Treasure room"],
+        "type": "Passive"
     },
     {
         "id": 56,
@@ -631,7 +687,8 @@
         "effects": ["Create a tiny pool of yellow creep"],
         "set": [],
         "pool": ["Treasure room"],
-        "charge":"2"
+        "charge":"2",
+        "type": "Active"
     },
     {
         "id": 57,
@@ -641,7 +698,8 @@
         "stats": {},
         "effects": ["Spawns a red fly that circles around Isaac"],
         "set": ["Beelzebub"],
-        "pool": ["Treasure room"]
+        "pool": ["Treasure room"],
+        "type": "Familiar"
     },
     {
         "id": 58,
@@ -652,7 +710,8 @@
         "effects": ["Makes Isaac invincible for 10 seconds"],
         "set": ["Bookworm"],
         "pool": ["Treasure room", "Library"],
-        "charge":"3"
+        "charge":"3",
+        "type": "Active"
     },
     {
         "id": 60,
@@ -662,6 +721,286 @@
         "stats": {},
         "effects": ["Isaac can walk across 1 square gaps"],
         "set": [],
-        "pool": ["Shop"]
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 62,
+        "name": "Charm of the Vampire",
+        "sub": "DMG up + kills heal",
+        "quality": 1,
+        "stats": {
+            "damage": "+0.3"
+        },
+        "effects": ["Heals a half red heart for every 13 enemies killed"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 63,
+        "name": "The Battery",
+        "sub": "Stores energy",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Allows activated items to store an extra level of charge"],
+        "set": [],
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 64,
+        "name": "Steam Sale",
+        "sub": "50% off",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Halven all Shop prices"],
+        "set": [],
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 65,
+        "name": "Anarchist Cookbook",
+        "sub": "Summon bombs",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Spawns 6 troll bombs around the room"],
+        "set": ["Bookworm"],
+        "pool": ["Treasure room", "Library"],
+        "charge": "3",
+        "type": "Active"
+    },
+    {
+        "id": 66,
+        "name": "The Hourglass",
+        "sub": "Temporary enemy slowdown",
+        "quality": 1,
+        "stats": {},
+        "effects": ["All enemies in the room are slowed for 8 seconds"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "charge": "2",
+        "type": "Active"
+    },
+    {
+        "id": 67,
+        "name": "Sister Maggy",
+        "sub": "Friends 'till the end",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Spawns a familiar that deals 6 damage per tear"],
+        "set": ["Conjoined"],
+        "pool": ["Treasure room", "Ultra secret room", "Devil room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 68,
+        "name": "Technology",
+        "sub": "Laser tears",
+        "quality": 3,
+        "stats": {},
+        "effects": ["Replaces tears with a piercing laser with infinite range"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 69,
+        "name": "Chocolate Milk",
+        "sub": "Charge shots",
+        "quality": 3,
+        "stats": {},
+        "effects": ["Grants charged tears that deal greater damage when fully charged"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 70,
+        "name": "Growth Hormones",
+        "sub": "Speed + DMG up",
+        "quality": 3,
+        "stats": {
+            "speed":"+0.2",
+            "damage":"+1"
+        },
+        "effects": [],
+        "set": ["Spun"],
+        "pool": ["Boss"],
+        "type": "Passive"
+    },
+    {
+        "id": 71,
+        "name": "Mini Mush",
+        "sub": "Speed + range up",
+        "quality": 2,
+        "stats": {
+            "speed":"+0.3",
+            "range":"+2.5"
+        },
+        "effects": ["Makes Isaac smaller"],
+        "set": ["Fun Guy"],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 72,
+        "name": "Rosary",
+        "sub": "Tears + faith up",
+        "quality": 2,
+        "stats": {
+            "tears":"+0.5"
+        },
+        "effects": ["Grants 3 soul hearts", "The Bible can appear in every item pool"],
+        "set": ["Seraphim"],
+        "pool": ["Treasure room", "Ultra secret room", "Angel room"],
+        "type": "Passive"
+    },
+    {
+        "id": 73,
+        "name": "Cube of Meat",
+        "sub": "Gotta meat 'em all!",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Spawns an orbital familiar, that levels up with every subsequent Cube of Meat obtained."],
+        "set": [],
+        "pool": ["Ultra secret room", "Harbingers (boss)"],
+        "type": "Familiar"
+    },
+    {
+        "id": 74,
+        "name": "A Quarter",
+        "sub": "+25 coins",
+        "quality": 0,
+        "stats": {},
+        "effects": ["Gives Isaac 25 coins"],
+        "set": [],
+        "pool": ["Devil room"],
+        "type": "Passive"
+    },
+    {
+        "id": 75,
+        "name": "PHD",
+        "sub": "Better pills",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Convert bad pills into good pills", "Identifies pills", "Spawns a pill", "Heals two red hearts"],
+        "set": [],
+        "pool": ["Treasure room", "Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 76,
+        "name": "X-Ray Vision",
+        "sub": "I've seen everything",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Opens all secret and super secret room"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 77,
+        "name": "My Little Unicorn",
+        "sub": "Temporary badass",
+        "quality": 1,
+        "stats": {},
+        "effects": ["For 6 seconds : invulnerability, +0.28 speed, contact damage"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Active",
+        "charge": "4"
+    },
+    {
+        "id": 78,
+        "name": "Book of Revelations",
+        "sub": "Reusable soul protection",
+        "quality": 3,
+        "stats": {
+            "deal chance": "+17.5%"
+        },
+        "effects": ["Grants 1 soul heart"],
+        "set": ["Bookworm"],
+        "pool": ["Library", "Treasure room", "Angel room"],
+        "type": "Active",
+        "charge": "6"
+    },
+    {
+        "id": 79,
+        "name": "The Mark",
+        "sub": "DMG + speed up",
+        "quality": 3,
+        "stats": {
+            "damage": "+1",
+            "speed": "+0.2"
+        },
+        "effects": ["Grants 1 black heart"],
+        "set": ["Leviathan"],
+        "pool": ["Devil room", "Curse room", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 80,
+        "name": "The Pact",
+        "sub": "DMG + tears up",
+        "quality": 3,
+        "stats": {
+            "damage":"+0.5",
+            "tears": "+0.7"
+        },
+        "effects": ["Grants 2 black hearts"],
+        "set": ["Leviathan"],
+        "pool": ["Devil room", "Curse room", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 81,
+        "name": "Dead Cat",
+        "sub": "9 lives",
+        "quality": 3,
+        "stats": {},
+        "effects": ["Grants 9 extra lives", "Set red heart container to 1"],
+        "set": ["Guppy"],
+        "pool": ["Devil room", "Curse room"],
+        "type": "Passive"
+    },
+    {
+        "id": 82,
+        "name": "Lord of the Pit",
+        "sub": "Demon wings",
+        "quality": 3,
+        "stats": {
+            "speed":"+0.3"
+        },
+        "effects": ["Grants flight"],
+        "set": [],
+        "pool": ["Devil room", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 83,
+        "name": "The Nail",
+        "sub": "Temporary demon form",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Grants half a black heart", "For the current room : +2 damage, -0.18 speed, stompy"],
+        "set": ["Leviathan"],
+        "pool": ["Devil room"],
+        "type": "Active",
+        "charge": "6"
+    },
+    {
+        "id": 84,
+        "name": "We Need to Go Deeper!",
+        "sub": "Reusable level skip",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Creates a trapdoor"],
+        "set": [],
+        "pool": ["Treasure room", "Devil room"],
+        "type": "Active",
+        "charge": "6"
     }
 ]

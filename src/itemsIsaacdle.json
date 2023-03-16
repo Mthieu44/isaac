@@ -1,0 +1,77 @@
+{
+    "stats" : {
+        "speed up": [12, 13, 14, 27, 28, 70, 71, 79, 82],
+        "speed down": [],
+        "damage up": [4, 5, 7, 12, 50, 51, 62, 70, 79, 80],
+        "damage down": [],
+        "tears up": [1, 6, 32, 72, 80],
+        "tears down": [],
+        "range up": [5, 12, 14, 29, 30, 31, 71],
+        "range down": [6],
+        "shot speed up": [],
+        "shot speed down": [],
+        "luck up": [46],
+        "luck down": [5],
+        "hp up": [12, 15, 16, 22, 23, 24, 25, 26],
+        "hp down": [81],
+        "deal chance up": [34, 51, 78],
+        "tear multiplier up": [],
+        "tear multiplier down": [2, 52],
+        "damage multiplier up": [4, 12],
+        "damage multiplier down": [],
+        "range multiplier up": [],
+        "range multiplier down": [6],
+        "shot speed multiplier up": [5],
+        "shot speed multiplier down" : []
+        },
+    "effects" : {
+        "multiple shot": [2, 55],
+        "temporary stats up": [34, 77, 83],
+        "temporary stats down": [83],
+        "homing tears": [3],
+        "piercing tears": [48, 68],
+        "spectral tears": [],
+        "tear status": [],
+        "tear modifier": [5, 52, 68, 69],
+
+        "red heart regeneration": 
+        [12, 15, 16, 22, 23, 24, 25, 26, 45, 62, 75],
+        "soul/black heart": [72, 78, 79, 80, 83],
+        "grants extra lives": [11, 81],
+
+        "flight": [20, 33, 82],
+        "size up": [12],
+        "size down": [71],
+        "contact damage": [13, 30, 77],
+        "invincibility": [58, 77],
+        "pass through gaps": [60],
+        "stompy": [83],
+
+        "gives pickup": [17, 18, 19, 74],
+        "affect pickups": [53],
+        "spawns pickup": [31, 75],
+        "modify room clear drops": [46],
+        "increase lottery chances": [46],
+
+        "active items' charge modifier": [63],
+        "price modification": [64],
+        "item pool/pedestal modification": [72],
+        
+        "pills modification": [46, 75],
+
+        "mapping/exploration": [21, 54, 76, 84],
+        "teleportation": [44],
+
+        "spawns a familiar": [8, 10, 57, 67, 73],
+        "spawns a temporary familiar": [29, 41],
+        "spawns something (not a pickup or a familiar)": 
+        [36, 37, 42, 65],
+
+        "pacify some enemies": [9],
+        "effect on all enemies in a room": [35, 39, 41, 66],
+        "one-time use attack": [38, 49],
+        "explosion": [40, 47],
+        "spawns creep": [56]
+        
+    }
+}
