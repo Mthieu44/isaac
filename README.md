@@ -3,8 +3,7 @@ Binding of isaac quiz
 
 Only have items showcase for the moment. (And not all of them)
 
-## Todos  
-Search bar style in Wiki  
-Error screen  
-Arrow in menu  
+## Todos   
+Add all the items
+Home page
 Isaacdle and Guess All  

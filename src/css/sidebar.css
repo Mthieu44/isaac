@@ -55,7 +55,7 @@ nav a:hover .arrowmenu {
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: -70px;
+    bottom: -65px;
 }
 
 #themeswitch p{

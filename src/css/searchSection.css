@@ -4,8 +4,52 @@
     background-image: url("../images/paper_small.png");
     background-size:cover;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 12%;
-    width: calc(100vh * 0.73);
+    height: 13%;
+    width: calc(100vh * 0.78);
 }
+
+#searchName, #searchId {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: -6px;
+}
+
+
+#searchSection p {
+    color:#333333;
+    font-family: teammeat;
+    font-size: 22px;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.search {
+    background:none;
+    background-image: url("../images/searchbars.png");
+    background-size: cover;
+    background-position: center center;
+    border: none;
+    color: white;
+    font-family: font2;
+    font-size: 18px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-bottom: 19px;
+}
+
+.search:focus {
+    outline: none;
+    background: none;
+    border: none;
+    background-image: url("../images/searchbars.png");
+    background-size: cover;
+    background-position: center center;
+    
+}
+

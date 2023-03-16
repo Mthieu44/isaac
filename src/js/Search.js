@@ -10,7 +10,7 @@ class SearchBar extends React.Component {
   
     render() {
       return (
-        <input id="search" onChange={this.props.onChange} onKeyDown={this.props.onKeyPress}/>
+        <input className="search" onChange={this.props.onChange} onKeyDown={this.props.onKeyPress}/>
       )
     }
   }
@@ -19,8 +19,16 @@ class Search extends React.Component{
     render() {
         return (
             <div id="searchSection">
+              <div id="searchName">
+                <p>Filter items by their name :</p>
                 <SearchBar onChange={this.props.searchName}/>
+              </div>
+              <div id="searchId">
+                <p>Go to an item by their id :</p>
                 <SearchBar onChange={this.props.searchId} onKeyPress={this.props.keyPress}/>
+              </div>
+                
+                
             </div>
         )
     }
