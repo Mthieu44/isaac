@@ -5,13 +5,17 @@ import SideBar from "./SideBar";
 class Root extends React.Component {
     constructor(props){
         super(props)
+        const savedtheme = localStorage.getItem("theme")
+        const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
         this.state = {
-            theme: "dark"
+            theme: savedtheme || (prefersDarkMode ? "dark" : "light")
         }
     }
 
     themeChange = () => {
-        this.setState({theme: this.getOppositeTheme()})
+        let oppositeTheme = this.getOppositeTheme()
+        this.setState({theme: oppositeTheme})
+        localStorage.setItem("theme", oppositeTheme);
     }
 
     getOppositeTheme() {

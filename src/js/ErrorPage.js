@@ -36,7 +36,7 @@ export default function ErrorPage() {
     <div id="error-page">
       
       <img src={imgSrc} alt=""/>
-      <p>Seems you arrived on the error page...</p>
+      <p>Seems you landed on the error page...</p>
       <Link to={path(location)}>Click here to get back</Link>
       <br></br>
       <p>Error message:</p>
