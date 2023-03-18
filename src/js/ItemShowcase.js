@@ -2,10 +2,15 @@ import React from "react";
 import larrow from '../images/arrow_left.png'
 import rarrow from '../images/arrow_right.png'
 import pedestal from '../images/pedestal.png'
+import q0 from '../images/quality0.png'
+import q1 from '../images/quality1.png'
+import q2 from '../images/quality2.png'
+import q3 from '../images/quality3.png'
+import q4 from '../images/quality4.png'
 import '../css/itemSection.css';
+const qs = [q0, q1, q2, q3, q4]
 
 class ItemImage extends React.Component {
-
     getTitle = (str) => {
         if (str === "<3"){return "less_than_three"}
         str = str.replace(/\s+/g, '_')
@@ -34,13 +39,39 @@ class ItemImage extends React.Component {
     }
 }
 
+class ItemQualityPool extends React.Component {
+    getPoolImg = (str) => {
+        if (str.includes("(boss)")){return "boss"}
+        str = str.replace(/\s+/g, '_')
+        str = str.toLowerCase();
+        return str;
+    }
+
+    render() {
+        let poolimgs = []
+        this.props.pool.forEach(po => {
+            let poolimg = require("../images/pools/" + this.getPoolImg(po) + ".png")
+            poolimgs.push(<img key={poolimg} src={poolimg} alt={po} title={po} className="pool"></img>)
+        });
+
+        return (
+            <div id="qualpool">
+                <img src={qs[this.props.quality]} alt="quality" title={"Quality " + this.props.quality} id="quality"></img>
+                <p>-</p>
+                {poolimgs}
+            </div>
+        )
+    }
+}
+
 class ItemName extends React.Component {
     render() {
         return (
         <div className="top">
-            <h1>{this.props.name}</h1>
-            <h2>{this.props.sub}</h2>
-            <h2>ID : {this.props.id}</h2>
+            <h1>{this.props.item.name}</h1>
+            <h2>{this.props.item.sub}</h2>
+            <h3>ID : {this.props.item.id}</h3>
+            <ItemQualityPool quality={this.props.item.quality} pool={this.props.item.pool}/>
         </div>
         )
     }
@@ -60,7 +91,6 @@ class ItemDesc extends React.Component {
 
         return (
         <div id="desc">
-            <h3 id="quality">Quality : {this.props.quality}</h3>
             <h3>Stats :</h3>
             <ul>{statElements}</ul>
             <h3>Effects :</h3>
@@ -94,7 +124,7 @@ class ItemShowcase extends React.Component {
     render() {
         return (
         <div id="itemSection">
-            <ItemName name={this.props.item.name} sub={this.props.item.sub} id={this.props.item.id}/>
+            <ItemName item={this.props.item}/>
             <div className="bottom">
                 <PrevArrow onClick={this.props.prev}/>
                 <ItemImage src={this.props.item.name}/>
