@@ -1002,5 +1002,791 @@
         "pool": ["Treasure room", "Devil room"],
         "type": "Active",
         "charge": "6"
+    },
+    {
+        "id": 85,
+        "name": "Deck of Cards",
+        "sub": "Reusable card generator",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Gives Isaac a random card"],
+        "set": [],
+        "pool": ["Treasure room", "Shop"],
+        "type": "Active",
+        "charge": "6"
+    },
+    {
+        "id": 86,
+        "name": "Monstro's Tooth",
+        "sub": "Summon Monstro",
+        "quality": 1,
+        "stats": {},
+        "effects": ["A friendly jumps and deal damage on a random enemy"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Active",
+        "charge": "3"
+    },
+    {
+        "id": 87,
+        "name": "Loki's Horns",
+        "sub": "Cross tears",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Random chance to fire projectiles in all cardinal directions"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 88,
+        "name": "Little Chubby",
+        "sub": "Attack buddy",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Spawns a familiar that charges forward and deal contact damage"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 89,
+        "name": "Spider Bite",
+        "sub": "Slow effect",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Chance to fire a slowing tear"],
+        "set": ["Spider Baby"],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 90,
+        "name": "The Small Rock",
+        "sub": "DMG up + speed down",
+        "quality": 3,
+        "stats": {
+            "damage": "+1",
+            "tears": "+0.2",
+            "speed": "-0.2"
+        },
+        "effects": [],
+        "set": [],
+        "pool": ["Tinted rocks"],
+        "type": "Passive"
+    },
+    {
+        "id": 91,
+        "name": "Spelunker Hat",
+        "sub": "See-through doors",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Reveals rooms up to 2 rooms away", "Blocks projectile falling from above"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 92,
+        "name": "Super Bandage",
+        "sub": "+2 hearts",
+        "quality": 2,
+        "stats": {
+            "hp": "+1"
+        },
+        "effects": ["Grants 2 soul hearts", "Heals one red heart"],
+        "set": [],
+        "pool": ["Treasure room", "Boss"],
+        "type": "Passive"
+    },
+    {
+        "id": 93,
+        "name": "The Gamekid",
+        "sub": "Temporary Man-Pac",
+        "quality": 1,
+        "stats": {},
+        "effects": ["For 6.5 seconds : invulnerability, fear on all enemies, Isaac deals contact damage, enemy killed have to chance to regen a half red heart"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Active",
+        "charge": "4"
+    },
+    {
+        "id": 94,
+        "name": "Sack of Pennies",
+        "sub": "Gives money",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Spanws a familiar that drops a coin every 2 rooms"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 95,
+        "name": "Robo-baby",
+        "sub": "Friends 'till the bbbbzzzt",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Spawns a familiar that shoots Technology laser"],
+        "set": ["Conjoined"],
+        "pool": ["Treasure room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 96,
+        "name": "Little C.H.A.D.",
+        "sub": "Gives kisses",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Spawnsa familiar that drops a half red heart every 3 rooms"],
+        "set": [],
+        "pool": ["Treasure room", "Ultra secret room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 97,
+        "name": "The Book of Sin",
+        "sub": "Reusable item generator",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Drops a random pickup"],
+        "set": ["Bookworm"],
+        "pool": ["Treasure room", "Library", "Devil room"],
+        "type": "Active",
+        "charge": "4"
+    },
+    {
+        "id": 98,
+        "name": "The Relic",
+        "sub": "Soul generator",
+        "quality": 3,
+        "stats": {},
+        "effects": ["Spawns a familiar that drops a soul heart every 7-8 rooms"],
+        "set": [],
+        "pool": ["Angel room", "Treasure room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 99,
+        "name": "Little Gish",
+        "sub": "Sticky friend",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Spawns a familiar that shoots slowing tears"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 100,
+        "name": "Little Steven",
+        "sub": "Psychic friend",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Spawns a familiar that shoots homing tears"],
+        "set": ["Conjoined"],
+        "pool": ["Treasure room", "Steven (boss)"],
+        "type": "Familiar"
+    },
+    {
+        "id": 101,
+        "name": "The Halo",
+        "sub": "All stats up",
+        "quality": 2,
+        "stats": {
+            "hp": "+1",
+            "damage":"+0.3",
+            "tears":"+0.2",
+            "range":"+1.5",
+            "speed":"+0.3"
+        },
+        "effects": ["Heals one red heart"],
+        "set": ["Seraphim"],
+        "pool": ["Angel room", "Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 102,
+        "name": "Mom's Bottle of Pills",
+        "sub": "Reusable pill generator",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Gives Isaac a random pill"],
+        "set": ["Yes Mother?"],
+        "pool": ["Treasure room", "Shop"],
+        "type": "Active",
+        "charge": "6"
+    },
+    {
+        "id": 103,
+        "name": "The Common Cold",
+        "sub": "Poison damage",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Chance to fire a poison tear"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 104,
+        "name": "The Parasite",
+        "sub": "Split shot",
+        "quality": 3,
+        "stats": {},
+        "effects": ["Tears split in half uppon impact with something"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 105,
+        "name": "The D6",
+        "sub": "Reroll your destiny",
+        "quality": 4,
+        "stats": {},
+        "effects": ["Rerolls all items in the current room into other items"],
+        "set": [],
+        "pool": ["Treasure room", "Ultra secret room"],
+        "type": "Active",
+        "charge": "6"
+    },
+    {
+        "id": 106,
+        "name": "Mr. Mega",
+        "sub": "Bigger boom",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Gives Isaac 5 bombs", "Makes Isaac bombs bigger, and deal more damage"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 107,
+        "name": "The Pinking Shears",
+        "sub": "Cut and run",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Separates Isaac's head from his body, granting flight and turning the body into a familiar that chases enemies"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Active",
+        "charge": "4"
+    },
+    {
+        "id": 108,
+        "name": "The Wafer",
+        "sub": "Damage resistance",
+        "quality": 4,
+        "stats": {},
+        "effects": ["All damages are reduced to half a heart"],
+        "set": [],
+        "pool": ["Angel room", "Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 109,
+        "name": "Money = Power",
+        "sub": "$$$ = DMG",
+        "quality": 3,
+        "stats": {},
+        "effects": ["Increase damage by 0.04 for every coin Isaac has"],
+        "set": [],
+        "pool": ["Treasure room", "Devil room", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 110,
+        "name": "Mom's Contact",
+        "sub": "Freeze effect",
+        "quality": 3,
+        "stats": {
+            "range": "+1.5"
+        },
+        "effects": ["Chance to fire a petrifying tear"] ,
+        "set" : ["Yes Mother?"],
+        "pool": ["Treasure room", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 111,
+        "name": "The Bean",
+        "sub": "Toot on command",
+        "quality": 0,
+        "stats": {},
+        "effects": ["Isaac fart, poisoning enemies in close range"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Active",
+        "charge":"1"
+    },
+    {
+        "id": 112,
+        "name": "Guardian Angel",
+        "sub": "Extra protection",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Spawns an orbital familiar that blocks enemy shots, deals contact damage and increase the speed of all orbital familiars"],
+        "set": ["Conjoined"],
+        "pool": ["Angel room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 113,
+        "name": "Demon Baby",
+        "sub": "Auto-turret friend",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Spawns a familiar that automatically fires at enemies"],
+        "set": ["Conjoined"],
+        "pool": ["Treasure room", "Devil room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 114,
+        "name": "Mom's Knife",
+        "sub": "Stab stab stab",
+        "quality": 4,
+        "stats": {},
+        "effects": ["Replaces tears with a knife that can go through enemies and obstacles", "Holding the fire button inceases its range and power"],
+        "set": ["Yes Mother?"],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 115,
+        "name": "Ouija Board",
+        "sub": "Spectral tears + tears up",
+        "quality": 2,
+        "stats": {
+            "tears":"+0.4"
+        },
+        "effects": ["Spectral tears"],
+        "set": [],
+        "pool": ["Treasure room", "Devil room"],
+        "type": "Passive"
+    },
+    {
+        "id": 116,
+        "name": "9 Volt",
+        "sub": "Quicker charge",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Reduces the charge of any activated item by 1", "1 charge items will have timed recharges instead", "Fully charges the current activated item on pickup"],
+        "set": [],
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 117,
+        "name": "Dead Bird",
+        "sub": "Protective buddy",
+        "quality": 0,
+        "stats": {},
+        "effects": ["After taking damage, spawns a flying familiar that chases enemies in the current room"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 118,
+        "name": "Brimstone",
+        "sub": "Blood laser barrage",
+        "quality": 4,
+        "stats": {},
+        "effects": ["Replaces tears with a charged blood laser beam, that is spectral and piercing"],
+        "set": ["Leviathan"],
+        "pool": ["Devil room", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 119,
+        "name": "Blood Bag",
+        "sub": "HP up",
+        "quality": 2,
+        "stats": {
+            "hp": "+1",
+            "speed":"+0.3"
+        },
+        "effects": ["Heals four red hearts"],
+        "set": [],
+        "pool": ["Ultra secret room", "Blood donation machine"],
+        "type": "Passive"
+    },
+    {
+        "id": 120,
+        "name": "Odd Mushroom (Thin)",
+        "sub": "Tears + speed up, DMG down",
+        "quality": 2,
+        "stats": {
+            "tears":"+1.7",
+            "speed":"+0.3"
+        },
+        "effects": ["Reduces your damage stat with a complicated formula, but the more damage up item you have, the less this item reduces your damage"],
+        "set": ["Fun Guy"],
+        "pool": ["Treasure room", "Secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 121,
+        "name": "Odd Mushroom (Large)",
+        "sub": "HP + DMG up, speed down",
+        "quality": 2,
+        "stats": {
+            "damage":"+1",
+            "hp": "+1",
+            "range": "+1.5",
+            "speed": "-0.2"
+        },
+        "effects": [],
+        "set": ["Fun Guy"],
+        "pool": ["Treasure room", "Secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 122,
+        "name": "Whore of Babylon",
+        "sub": "Curse up", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["When at less than a half red heart: +1.5 damage, +0.3 speed"],
+        "set": [],
+        "pool": ["Devil room", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 123,
+        "name": "Monster Manual",
+        "sub": "Temporary buddy generator", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Spawns a familiar for the current floor"],
+        "set": ["Bookworm"],
+        "pool": ["Library", "Treasure room", "Devil room"],
+        "type": "Active",
+        "charge": "6"
+    },
+    {
+        "id": 124,
+        "name": "Dead Sea Scrolls",
+        "sub": "It's a mystery", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Triggers the effect of a random activated item"],
+        "set": [],
+        "pool": ["Treasure room", "Angel room"],
+        "type": "Active",
+        "charge": "2"
+    },
+    {
+        "id": 125,
+        "name": "Bobby-Bomb",
+        "sub": "Homing bombs!", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Gives Isaac 5 bombs", "Bombs gain a homing effect"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 126,
+        "name": "Razor Blade",
+        "sub": "Feel my pain", 
+        "quality": 0,
+        "stats": {},
+        "effects": ["Takes on red heart, and grants +1.2 damage for the current room"],
+        "set": [],
+        "pool": ["Treasure room", "Curse room"],
+        "type": "Active",
+        "charge":"Unlimited"
+    },
+    {
+        "id": 127,
+        "name": "Forget Me Now",
+        "sub": "I don't remember...", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Re-generate and restart the current floor"],
+        "set": [],
+        "pool": ["Treasure room", "Secret room", "Devil room"],
+        "type": "Active",
+        "charge": "One-time"
+    },
+    {
+        "id": 128,
+        "name": "Forever Alone",
+        "sub": "Attack fly", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Spawns a blue fly that orbits a long distance from Isaac"],
+        "set": ["Beelzebub"],
+        "pool": ["Treasure room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 129,
+        "name": "Bucket of Lard",
+        "sub": "HP up", 
+        "quality": 1,
+        "stats": {
+            "hp":"+2",
+            "speed":"-0.2"
+        },
+        "effects": ["Heals a half red heart"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 130,
+        "name": "A Pony",
+        "sub": "Flight + dash attack", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Grants flight", "Set Isaac's speed to 1.5 if he has less", "On use, charges forward, dealing contact damage and giving invincibility"],
+        "set": [],
+        "pool": ["The Headless Horseman (boss)"],
+        "type": "Active",
+        "charge":"2"
+    },
+    {
+        "id": 131,
+        "name": "Bomb Bag",
+        "sub": "Gives bombs", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Spanws a familiar that drops a bomb every 3 rooms"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 132,
+        "name": "A Lump of Coal",
+        "sub": "My Xmas present", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["The more distance tears travel, the more damage they will do"],
+        "set": [],
+        "pool": ["Krampus (boss)"],
+        "type": "Passive"
+    },
+    {
+        "id": 133,
+        "name": "Guppy's Paw",
+        "sub": "Soul converter", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["On use, convert one red heart container to 3 soul hearts"],
+        "set": ["Guppy"],
+        "pool": ["Devil room", "Curse room"],
+        "type": "Active",
+        "charge":"Unlimited"
+    },
+    {
+        "id": 134,
+        "name": "Guppy's Tail",
+        "sub": "Cursed?", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Grants a 1/3 chance to replace a room clear award by a chest", "Grants a 2/9 chance to completely remove the room clear award"],
+        "set": ["Guppy"],
+        "pool": ["Curse room", "Devil room"],
+        "type": "Passive"
+    },
+    {
+        "id": 135,
+        "name": "IV Bag",
+        "sub": "Portable blood bank", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Upon use, Isaac loses half a heart, for 1-2 random coins"],
+        "set": [],
+        "pool": ["Ultra secret room", "Blood donation machine"],
+        "type": "Active",
+        "charge": "Unlimited"
+    },
+    {
+        "id": 136,
+        "name": "Best Friend",
+        "sub": "Friends 'till the end", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Spawns a decoy that explodes after 5 seconds"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Active",
+        "charge": "3"
+    },
+    {
+        "id": 137,
+        "name": "Remote Detonator",
+        "sub": "Remote bomb detonation", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Gives Isaac 5 bombs", "Bombs placed by Isaac will only explodes when Remote Detonator is used"],
+        "set": [],
+        "pool": ["Treasure room", "Shop", "Ultra secret room"],
+        "type": "Active",
+        "charge":"Unlimited"
+    },
+    {
+        "id": 138,
+        "name": "Stigmata",
+        "sub": "DMG + HP up", 
+        "quality": 2,
+        "stats": {
+            "hp":"+1",
+            "damage":"+0.3"
+        },
+        "effects": ["Heals one red heart"],
+        "set": [],
+        "pool": ["Treasure room", "Angel room"],
+        "type": "Passive"
+    },
+    {
+        "id": 139,
+        "name": "Mom's Purse",
+        "sub": "More trinket room", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Allows Isaac to hold one additional trinket", "Spawns a random trinket"],
+        "set": ["Yes Mother?"],
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 140,
+        "name": "Bob's Curse",
+        "sub": "+5 poison bombs", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Gives Isaac 5 bombs", "Isaac's bombs have a poison effect, and leave a poison cloud", "Gives Isaac immunity to poison"],
+        "set": ["Bob"],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 141,
+        "name": "Pageant Boy",
+        "sub": "Ultimate grand supreme", 
+        "quality": 0,
+        "stats": {},
+        "effects": ["Spawns 7 random coins"],
+        "set": [],
+        "pool": ["Boss"],
+        "type": "Passive"
+    },
+    {
+        "id": 142,
+        "name": "Scapular",
+        "sub": "Pray for a miracle", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Once per room, grants one soul heart if Isaac is down to half a heart"],
+        "set": ["Seraphim"],
+        "pool": ["Treasure room", "Angel room"],
+        "type": "Passive"
+    },
+    {
+        "id": 143,
+        "name": "Speed Ball",
+        "sub": "Speed + shot speed up", 
+        "quality": 2,
+        "stats": {
+            "speed": "+0.3",
+            "shot speed": "+0.2"
+        },
+        "effects": [],
+        "set": ["Spun"],
+        "pool": ["Treasure room", "Boss"],
+        "type": "Passive"
+    },
+    {
+        "id": 144,
+        "name": "Bum Friend",
+        "sub": "He's greedy", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Spawns a familiar that picks up coins on the ground", "Drops a pickup after a few coins collected"] ,
+        "set" : ["Super Bum"],
+        "pool": ["Treasure room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 145,
+        "name": "Guppy's Head",
+        "sub": "Reusable fly hive", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Spawbs 2-4 blue flies"] ,
+        "set" : ["Guppy"],
+        "pool": ["Curse room", "Devil room"],
+        "type": "Active",
+        "charge": "1"
+    },
+    {
+        "id": 146,
+        "name": "Prayer Card",
+        "sub": "Reusable eternity", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Grants an eternal heart on use"],
+        "set": [],
+        "pool": ["Treasure room", "Angel room"],
+        "type": "Active",
+        "charge": "6"
+    },
+    {
+        "id": 147,
+        "name": "Notched Axe",
+        "sub": "Rocks don't stand a chance", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Toggles between tears and the pickaxe, which can be swung to attack and break obstacles. Using it depletes the charge, and it can't be used until next floor once the charge runs out."],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Active",
+        "charge":"Unlimited"
+    },
+    {
+        "id": 148,
+        "name": "Infestation",
+        "sub": "Fly revenge", 
+        "quality": 0,
+        "stats": {},
+        "effects": ["Spawns 2-6 blue flies when Isaac gets hit"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 149,
+        "name": "Ipecac",
+        "sub": "Explosive shots", 
+        "quality": 4,
+        "stats": {
+            "flat damage": "+40",
+            "tears multiplier": "x0.33",
+            "shot speed": "-0.2"
+        },
+        "effects": ["Tears are explosive and poisoning, and are fired in an arc"],
+        "set": ["Bob"],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 150,
+        "name": "Tough Love",
+        "sub": "Tooth shot", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Chance to fire a tooth which deals x3.2 Isaac's damage"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
     }
 ]
