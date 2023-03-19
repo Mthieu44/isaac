@@ -3,11 +3,12 @@
     bottom: 50px;
     background-image: url("../images/paper_small.png");
     background-size:cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 13%;
-    width: calc(100vh * 0.78);
+    width: calc(100vh * 0.80);
 }
 
 #searchName, #searchId {

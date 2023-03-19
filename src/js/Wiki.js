@@ -1,7 +1,10 @@
 import ItemShowcase from './ItemShowcase';
 import Search from './Search';
+import ItemSlider from './ItemSlider';
 import React from 'react';
 import Items from '../items.json';
+import Item from './item';
+const items = Items.map(obj => new Item(obj))
 
 
 class Wiki extends React.Component {
@@ -12,7 +15,7 @@ class Wiki extends React.Component {
       search: "",
       searchId: ""
     }
-    this.allItems = Items
+    this.allItems = items
     this.items = this.allItems
     this.handleSearchName = this.handleSearchName.bind(this)
     this.handleSearchId = this.handleSearchId.bind(this)
@@ -108,8 +111,15 @@ class Wiki extends React.Component {
     }
   }
 
+  handleSliderClick = (event) => {
+    let i = this.items.findIndex(item => item.id.toString() === event.target.alt)
+    this.setState({
+      currentItem: i
+    })
+  }
+
   render() {
-    let item = {
+    let item = new Item({
       id:"0",
       name: "No item",
       sub: "There's nothing here",
@@ -118,13 +128,14 @@ class Wiki extends React.Component {
       effects: [],
       set: [],
       pool: []
-    };
+    });
     if (this.items.length !== 0 && this.state.currentItem !== -1){
       item = this.items[this.state.currentItem]
     }
     return (
       <>
         <ItemShowcase prev={this.previousItem} next={this.nextItem} item={item}/>
+        <ItemSlider items={this.items} onClick={this.handleSliderClick} currentItem={this.state.currentItem}/>
         <Search searchName={this.handleSearchName} searchId={this.handleSearchId} keyPress={this.handleKeyPress}/>
       </>
     )

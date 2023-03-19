@@ -1,6 +1,7 @@
 #itemSection {
     background-image: url("../images/sidebar_back.png");
     background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
     height: 70%;
     width: calc(100vh * 0.7);

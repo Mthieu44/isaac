@@ -11,27 +11,11 @@ import '../css/itemSection.css';
 const qs = [q0, q1, q2, q3, q4]
 
 class ItemImage extends React.Component {
-    getTitle = (str) => {
-        if (str === "<3"){return "less_than_three"}
-        str = str.replace(/\s+/g, '_')
-        str = str.toLowerCase();
-        str = str.replace(/[^a-z0-9_]/g, '');
-        return str;
-    }
-
-    getUrl = (str) => {
-        if (str === "<3"){return "https://bindingofisaacrebirth.fandom.com/wiki/Less_Than_Three"}
-        str = str.replace(/\s+/g, '_')
-        str = encodeURIComponent(str)
-        return "https://bindingofisaacrebirth.fandom.com/wiki/" + str;
-    }
-
     render() {
-        let image = require("../images/items/" + this.getTitle(this.props.src) + ".png")
         return (
         <div id="item">
-            <a target="_blank" rel="noreferrer" href={this.props.src==="No item"? "https://bindingofisaacrebirth.fandom.com/wiki/Items":this.getUrl(this.props.src)} title="Click to see more details">
-                <img id="pic" src={image} alt="Item"/>
+            <a target="_blank" rel="noreferrer" href={this.props.item.link} title="Click to see more details">
+                <img id="pic" src={this.props.item.image} alt="Item"/>
             </a>
             <img id="pedestal" alt="pedestal" src={pedestal}/>
         </div>
@@ -79,8 +63,8 @@ class ItemName extends React.Component {
 
 class ItemDesc extends React.Component {
     render() {
-        let stats = this.props.stats;
-        let effects = this.props.effects;
+        let stats = this.props.item.stats;
+        let effects = this.props.item.effects;
         let statElements = [];
 
         for (let [statKey, statValue] of Object.entries(stats)) {
@@ -122,13 +106,14 @@ class PrevArrow extends React.Component {
 
 class ItemShowcase extends React.Component {
     render() {
+        let item = this.props.item
         return (
         <div id="itemSection">
-            <ItemName item={this.props.item}/>
+            <ItemName item={item}/>
             <div className="bottom">
                 <PrevArrow onClick={this.props.prev}/>
-                <ItemImage src={this.props.item.name}/>
-                <ItemDesc quality={this.props.item.quality} stats={this.props.item.stats} effects={this.props.item.effects}/>
+                <ItemImage item={item}/>
+                <ItemDesc item={item}/>
                 <NextArrow onClick={this.props.next}/>
             </div>
         </div>

@@ -1497,7 +1497,7 @@
         "sub": "Feel my pain", 
         "quality": 0,
         "stats": {},
-        "effects": ["Takes on red heart, and grants +1.2 damage for the current room"],
+        "effects": ["Takes one red heart, and grants +1.2 damage for the current room"],
         "set": [],
         "pool": ["Treasure room", "Curse room"],
         "type": "Active",
