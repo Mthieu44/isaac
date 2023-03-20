@@ -13,9 +13,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:6px;
     position: relative;
     top: 25px;
+    gap: 6px;
     margin-left: 30px;
     margin-right: 37px;
     overflow: hidden;
@@ -28,7 +28,7 @@
 .sliderpic {
     height: 59px;
     cursor: pointer;
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 .sliderpic:hover {

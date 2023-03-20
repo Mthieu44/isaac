@@ -39,6 +39,7 @@ class ItemSlider extends React.Component {
         if (this.startX && Math.abs(event.clientX - this.startX) > 5) {
             this.startX = null;
         } else {
+            
             this.props.onClick(event)
         }
     }

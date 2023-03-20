@@ -112,10 +112,12 @@ class Wiki extends React.Component {
   }
 
   handleSliderClick = (event) => {
-    let i = this.items.findIndex(item => item.id.toString() === event.target.alt)
-    this.setState({
-      currentItem: i
-    })
+    if (event.target.alt) {
+      let i = this.items.findIndex(item => item.id.toString() === event.target.alt)
+      this.setState({
+        currentItem: i
+      })
+    }
   }
 
   render() {
