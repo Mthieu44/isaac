@@ -59,6 +59,11 @@ li {
   font-family: font2;
 }
 
+p {
+  color:#333333;
+  margin: 0;
+}
+
 #content {
   display: flex;
   flex-direction: column;

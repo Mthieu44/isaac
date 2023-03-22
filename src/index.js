@@ -4,11 +4,11 @@ import './css/index.css';
 import Wiki from './js/Wiki';
 import ErrorPage from './js/ErrorPage';
 import Root from './js/Root';
-import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Isaacdle from './js/Isaacdle';
 
 
 const router = createBrowserRouter([
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/isaacdle",
-        element: <div>cc vous êtes sur le isaacdle</div>
+        element: <Isaacdle />
       },
       {
         path: "/guessall",
@@ -41,8 +41,3 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

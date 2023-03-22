@@ -2,11 +2,11 @@ import React from "react";
 import larrow from '../images/arrow_left.png'
 import rarrow from '../images/arrow_right.png'
 import pedestal from '../images/pedestal.png'
-import q0 from '../images/quality0.png'
-import q1 from '../images/quality1.png'
-import q2 from '../images/quality2.png'
-import q3 from '../images/quality3.png'
-import q4 from '../images/quality4.png'
+import q0 from '../images/qualities/quality0.png'
+import q1 from '../images/qualities/quality1.png'
+import q2 from '../images/qualities/quality2.png'
+import q3 from '../images/qualities/quality3.png'
+import q4 from '../images/qualities/quality4.png'
 import '../css/itemSection.css';
 const qs = [q0, q1, q2, q3, q4]
 
@@ -17,9 +17,36 @@ class ItemImage extends React.Component {
             <a target="_blank" rel="noreferrer" href={this.props.item.link} title="Click to see more details">
                 <img id="pic" src={this.props.item.image} alt="Item"/>
             </a>
+            <Charge charge={this.props.item.charge} />
             <img id="pedestal" alt="pedestal" src={pedestal}/>
         </div>
         )
+    }
+}
+
+class Charge extends React.Component {
+    render() {
+        if (this.props.charge){
+            let img
+            switch (this.props.charge) {
+                case "Unlimited":
+                    img = <img src={require(`../images/charge/1.png`)} alt="Charge bar" title="Unlimited"/>
+                    break;
+                case "One-time":
+                    img = <img src={require(`../images/charge/0.png`)} alt="Charge bar" title="One-time use"/>
+                    break;
+            
+                default:
+                    img = <img src={require(`../images/charge/${this.props.charge}.png`)} alt="Charge bar" title={`${this.props.charge} rooms`}/>
+                    break;
+            }
+    
+            return (
+                <div id="charge">
+                    {img}
+                </div>
+            )
+        }
     }
 }
 
@@ -33,6 +60,7 @@ class ItemQualityPool extends React.Component {
 
     render() {
         let poolimgs = []
+        this.props.pool.sort()
         this.props.pool.forEach(po => {
             let poolimg = require("../images/pools/" + this.getPoolImg(po) + ".png")
             poolimgs.push(<img key={poolimg} src={poolimg} alt={po} title={po} className="pool"></img>)

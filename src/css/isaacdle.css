@@ -1,0 +1,110 @@
+#guessinput {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../images/paper_medium.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20%;
+    width: 42%;
+    position: absolute;
+    top: 20px
+}
+
+#guessinput p{
+    color:#333333;
+    font-family: font2;
+    font-size: 32px;
+    margin: 0;
+    font-weight: bold;
+    margin-top: 38px;
+}
+
+#guessinput input {
+    background:none;
+    background-image: url("../images/searchbars.png");
+    background-size: cover;
+    background-position: center center;
+    border: none;
+    color: white;
+    font-family: font2;
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-bottom: 19px;
+}
+
+#guessinput input:focus {
+    outline: none;
+    background: none;
+    border: none;
+    background-image: url("../images/searchbars.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+#guesses {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: flex-start;
+    flex-direction: column;
+    background-image: url("../images/isaacdle_back.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 76%;
+    width: 42%;
+    position: absolute;
+    bottom: 10px;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 84%;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+#header p{
+    font-family: teammeat;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 38px;
+    width: 64px;
+    text-align: center;
+}
+
+.guess {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 84%;
+    margin-left: 40px;
+}
+
+.box {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: tempesta;
+    font-size: 15px;
+    text-align: center;
+}
+
+#boximg {
+    width: 64px;
+    height: auto;
+}
+
+#boxqual {
+    width: 33px;
+    height: auto;
+}

@@ -1,5 +1,5 @@
 #itemSection {
-    background-image: url("../images/sidebar_back.png");
+    background-image: url("../images/wiki_back.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -38,7 +38,6 @@
 }
 
 #qualpool p{
-    margin: 0;
     font-family: teammeat;
     font-size: 22px;
 }
@@ -56,6 +55,7 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    position: relative;
 }
 
 #item a:hover {
@@ -79,6 +79,17 @@
 100% {
     transform: translateY(0);
 }
+}
+
+#charge {
+    position: absolute;
+    right: -5px;
+    top: 25px;
+}
+
+#charge img {
+    height: 71px;
+    width: auto;
 }
   
 

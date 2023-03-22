@@ -1,17 +1,16 @@
+import q0 from '../images/qualities/quality0.png'
+import q1 from '../images/qualities/quality1.png'
+import q2 from '../images/qualities/quality2.png'
+import q3 from '../images/qualities/quality3.png'
+import q4 from '../images/qualities/quality4.png'
+const qs = [q0, q1, q2, q3, q4]
+
 export default class Item {
-    id
-    name
-    sub
-    quality
-    stats
-    effects
-    pool
-    type
-    charge
     constructor(obj) {
         Object.assign(this,obj)
         this.image = this.getImage()
         this.link = this.getUrl()
+        
     }
 
     getImage() {
@@ -28,6 +27,10 @@ export default class Item {
         let str = this.name.replace(/\s+/g, '_')
         str = encodeURIComponent(str)
         return "https://bindingofisaacrebirth.fandom.com/wiki/" + str;
+    }
+
+    getQualityImage() {
+        return qs[this.quality]
     }
 
 }

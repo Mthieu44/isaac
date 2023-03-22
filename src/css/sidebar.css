@@ -1,5 +1,5 @@
 #sidebar {
-    background-image: url("../images/background_paper.png");
+    background-image: url("../images/sidebar_background.png");
     background-size: cover;
     width: 300px;
     height: calc(300px * 1.297);
@@ -59,10 +59,8 @@ nav a:hover .arrowmenu {
 }
 
 #themeswitch p{
-    color:#333333;
     font-family: teammeat;
     font-size: 20px;
-    margin: 0;
     font-weight: bold;
     cursor: pointer;
 }
