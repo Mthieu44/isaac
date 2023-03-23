@@ -1395,7 +1395,9 @@
         "name": "Brimstone",
         "sub": "Blood laser barrage",
         "quality": 4,
-        "stats": {},
+        "stats": {
+            "tears multiplier": "x0.33"
+        },
         "effects": ["Replaces tears with a charged blood laser beam, that is spectral and piercing"],
         "set": ["Leviathan"],
         "pool": ["Devil room", "Ultra secret room"],

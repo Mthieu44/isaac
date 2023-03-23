@@ -48,16 +48,16 @@
 #guesses {
     display: flex;
     justify-content: flex-start;
-    gap: 15px;
     align-items: flex-start;
     flex-direction: column;
     background-image: url("../images/isaacdle_back.png");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 76%;
-    width: 42%;
+    height: 74%;
+    width: 65%;
     position: absolute;
     bottom: 10px;
+    overflow: hidden;
 }
 
 #header {
@@ -65,9 +65,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
-    margin-left: 40px;
+    width: 85%;
 }
 
 #header p{
@@ -75,8 +76,25 @@
     font-size: 20px;
     font-weight: bold;
     margin-top: 38px;
-    width: 64px;
     text-align: center;
+}
+
+#guessesinside {
+    width: 85%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+    flex-direction: column;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#guessesinside::-webkit-scrollbar {
+    display: none;
 }
 
 .guess {
@@ -84,12 +102,10 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 84%;
-    margin-left: 40px;
+    width: 100%;
 }
 
 .box {
-    width: 64px;
     height: 64px;
     display: flex;
     justify-content: center;
@@ -99,6 +115,26 @@
     text-align: center;
 }
 
+.smallbox {
+    width: 84px;
+}
+
+.largebox {
+    width: 250px;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.largebox::-webkit-scrollbar {
+    display: none;
+}
+
+#statbox {
+    width: 150px;
+}
+
+
 #boximg {
     width: 64px;
     height: auto;
@@ -107,4 +143,25 @@
 #boxqual {
     width: 33px;
     height: auto;
+}
+
+.red {
+    background-image: url("../images/splash_red.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.green {
+    background-image: url("../images/splash_green.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.orange {
+    background-image: url("../images/splash_orange.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
 }

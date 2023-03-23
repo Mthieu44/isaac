@@ -18,28 +18,41 @@ class GuessInput extends React.Component {
 class Guesses extends React.Component {
     render() {
         let guesses = []
-        this.props.guesses.forEach(item => {
-            guesses.push(<Guess item={item} key={item.id}/>)
+        this.props.guesses.reverse().forEach(item => {
+            guesses.push(<Guess item={item} key={item.id} answer={this.props.answer}/>)
         });
 
         return (
             <div id="guesses">
                 <div id="header">
-                    <p>Item</p>
-                    <p>Type</p>
-                    <p>Quality</p>
-                    <p>Set</p>
-                    <p>Pool</p>
-                    <p>Stats</p>
-                    <p>Effects</p>
+                    <p className="smallbox">Item</p>
+                    <p className="smallbox">Type</p>
+                    <p className="smallbox">Quality</p>
+                    <p className="smallbox">Set</p>
+                    <p className="smallbox">Pool</p>
+                    <p className="largebox">Stats</p>
+                    <p className="largebox">Effects</p>
                 </div>
-                {guesses}
+                <div id="guessesinside">
+                    {guesses}
+                </div>
+                
             </div>
         )
     }
 }
 
 class Guess extends React.Component {
+    getPoolImgs(item) {
+        let poolimgs = []
+        item.pool.sort()
+        item.pool.forEach(po => {
+            let poolimg = require("../images/pools/" + this.getPoolImg(po) + ".png")
+            poolimgs.push(<img key={poolimg} src={poolimg} alt={po} title={po} className="pool"></img>)
+        });
+        return poolimgs
+    }
+
     getPoolImg = (str) => {
         if (str.includes("(boss)")){return "boss"}
         str = str.replace(/\s+/g, '_')
@@ -47,41 +60,94 @@ class Guess extends React.Component {
         return str;
     }
 
-    render() {
-        let item = this.props.item
+    getSet(item){
         let set = ""
-        if (item.set.length === 0){set = "None"}
-        else {
-            item.set.forEach(s => set += s)
-        }
+        item.set.forEach(s => set += `${s} `)
+        return set === "" ? "None" : set
+    }
 
-        let poolimgs = []
-        item.pool.sort()
-        item.pool.forEach(po => {
-            let poolimg = require("../images/pools/" + this.getPoolImg(po) + ".png")
-            poolimgs.push(<img key={poolimg} src={poolimg} alt={po} title={po} className="pool"></img>)
-        });
+    getStats(item){
         let stats = "";
-        for (let [statKey, statValue] of Object.entries(item.stats)) {
-            stats += `${statValue} ${statKey}, `
-        }
+        item.getIsaacdleStats().forEach(s => {
+            stats += `${s}, `
+        })
+        return stats === "" ? "None" : stats
+    }
+
+    getEffects(item){
         let effects = ""
-        item.effects.forEach(ef => {
+        item.getIsaacdleEffects().forEach(ef => {
             effects += `${ef}, `
         })
+        return effects === "" ? "None" : effects
+    }
+
+    compareLists(list1, list2) {
+        const set1 = new Set(list1);
+        const set2 = new Set(list2);
+        const intersection = new Set([...set1].filter(x => set2.has(x)));
+        if (set1.size === set2.size && intersection.size === set1.size) {return "green"}
+        else if (intersection.size === 0){return "red"}
+        else {return "orange"}
+      }
+
+    testBox(item, param) {
+        let classname = "box"
+        let answer = this.props.answer
+        switch (param) {
+            case "id":
+                classname += item.id === answer.id ? " smallbox green": " smallbox red"
+                break;
+            case "type":
+                classname += item.type === answer.type ? " smallbox green": " smallbox red"
+                break;
+            case "quality":
+                classname += item.quality === answer.quality ? " smallbox green": " smallbox red"
+                break;
+            case "set":
+                classname += ` smallbox ${this.compareLists(item.set, answer.set)}`
+                break;
+            case "pool":
+                let ipool = []
+                item.pool.forEach(po => {
+                    if (po.includes("(boss)")){ipool.push("Boss")}
+                    else {ipool.push(po)}
+                })
+                let apool = []
+                answer.pool.forEach(po => {
+                    if (po.includes("(boss)")){apool.push("Boss")}
+                    else {apool.push(po)}
+                })
+
+                classname += ` smallbox ${this.compareLists(ipool, apool)}`
+                break;
+            case "stat":
+                classname += ` largebox ${this.compareLists(item.getIsaacdleStats(), answer.getIsaacdleStats())}`
+                break;
+            case "effect":
+                classname += ` largebox ${this.compareLists(item.getIsaacdleEffects(), answer.getIsaacdleEffects())}`
+                break;
+            default:
+                break;
+        }
+        return classname
+    }
+
+    render() {
+        let item = this.props.item
         return (
             <div className="guess">
-                <div className="box">
+                <div className={this.testBox(item, "id")}>
                     <img src={item.image} alt={item.name} title={item.name} id="boximg"/>
                 </div>
-                <div className="box">{item.type}</div>
-                <div className="box">
+                <div className={this.testBox(item, "type")}>{item.type}</div>
+                <div className={this.testBox(item, "quality")}>
                     <img src={item.getQualityImage()} alt={item.quality} title={`Quality ${item.quality}`} id="boxqual"/>
                 </div>
-                <div className="box">{set}</div>
-                <div className="box">{poolimgs}</div>
-                <div className="box">{stats}</div>
-                <div className="box">{effects}</div>
+                <div className={this.testBox(item, "set")}>{this.getSet(item)}</div>
+                <div className={this.testBox(item, "pool")}>{this.getPoolImgs(item)}</div>
+                <div className={this.testBox(item, "stat")}>{this.getStats(item)}</div>
+                <div className={this.testBox(item, "effect")}>{this.getEffects(item)}</div>
                 
             </div>
         )
@@ -109,6 +175,7 @@ class Isaacdle extends React.Component {
                 this.setState({
                     guesses: guesses,
                     items: items
+                    
                 })
                 event.target.value = ""
             }
@@ -117,10 +184,11 @@ class Isaacdle extends React.Component {
     }
 
     render() {
+        console.log(this.state.answer);
         return(
             <>
                 <GuessInput keyPress={this.handleEnter}/>
-                <Guesses guesses={this.state.guesses}/>
+                <Guesses guesses={this.state.guesses} answer={this.state.answer}/>
             </>
         )
     }

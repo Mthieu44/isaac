@@ -3,8 +3,10 @@ import q1 from '../images/qualities/quality1.png'
 import q2 from '../images/qualities/quality2.png'
 import q3 from '../images/qualities/quality3.png'
 import q4 from '../images/qualities/quality4.png'
-const qs = [q0, q1, q2, q3, q4]
+import itemisaacdle from "../itemsIsaacdle.json"
 
+
+const qs = [q0, q1, q2, q3, q4]
 export default class Item {
     constructor(obj) {
         Object.assign(this,obj)
@@ -31,6 +33,26 @@ export default class Item {
 
     getQualityImage() {
         return qs[this.quality]
+    }
+
+    getIsaacdleStats() {
+        let s = []
+        for (let [stat, list] of Object.entries(itemisaacdle.stats)) {
+            if (list.includes(this.id)){
+                s.push(stat)
+            }
+        }
+        return s
+    }
+
+    getIsaacdleEffects() {
+        let e = []
+        for (let [effect, list] of Object.entries(itemisaacdle.effects)) {
+            if (list.includes(this.id)){
+                e.push(effect)
+            }
+        }
+        return e
     }
 
 }

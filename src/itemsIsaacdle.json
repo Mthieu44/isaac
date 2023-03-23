@@ -16,7 +16,7 @@
         "hp down": [81],
         "deal chance up": [34, 51, 78],
         "tear multiplier up": [],
-        "tear multiplier down": [2, 52, 149],
+        "tear multiplier down": [2, 52, 118, 149],
         "damage multiplier up": [4, 12],
         "damage multiplier down": [],
         "range multiplier up": [],
@@ -34,7 +34,7 @@
         "tears have status effect": [89, 99, 103, 110, 149],
         "modified tears": [5, 52, 68, 69, 95, 104, 114, 118, 132, 149, 150],
         "melee attack": [147],
-        "luck based": [55, 82, 89, 103, 110, 150],
+        "luck based": [55, 87, 89, 103, 110, 150],
 
         "red heart regeneration": 
         [12, 15, 16, 22, 23, 24, 25, 26, 45, 62, 75, 92, 93, 101, 119, 124, 129, 
