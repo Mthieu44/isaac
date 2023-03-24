@@ -13,7 +13,7 @@
     top: 20px
 }
 
-#guessinput p{
+#guessinput h1{
     color:#333333;
     font-family: font2;
     font-size: 32px;
@@ -43,6 +43,48 @@
     background-image: url("../images/searchbars.png");
     background-size: cover;
     background-position: center center;
+}
+
+#suggestionlist {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 250px;
+    top: 120px;
+    overflow: scroll;
+    max-height: 300px;
+    background-color: #333333;
+    z-index: 20;
+    overflow-x: hidden;
+}
+
+.suggestion {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.suggestion:hover {
+    background-color: #ffffff2c;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.suggestion p {
+    font-size: 15px;
+    font-family: font2;
+    color: white;
+}
+
+.suggestion img {
+    height: 32px;
+    width: auto;
 }
 
 #guesses {

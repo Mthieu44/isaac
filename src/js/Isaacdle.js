@@ -6,10 +6,62 @@ const items = Items.map(obj => new Item(obj))
 
 class GuessInput extends React.Component {
     render(){
-        return(
-            <div id="guessinput">
-                <p>Guess today's item !</p>
-                <input onKeyDown={this.props.keyPress}></input>
+        if (this.props.search.length > 0 && this.props.show){
+            let items = this.props.items.filter((item) => item.name.toLowerCase().includes(this.props.search.toLowerCase()))
+            return(
+                <div id="guessinput">
+                    <h1>Guess today's item !</h1>
+                    <input 
+                    value={this.props.search}
+                    onKeyDown={this.props.keyPress} 
+                    onChange={this.props.handleSearch} 
+                    onBlur={this.props.handleFocusOut}
+                    ></input>
+                    <SuggestionList items={items} handleSuggestionClick={this.props.handleSuggestionClick}/>
+                </div>
+            )
+        }else {
+            return(
+                <div id="guessinput">
+                    <h1>Guess today's item !</h1>
+                    <input 
+                    value={this.props.search}
+                    onKeyDown={this.props.keyPress} 
+                    onChange={this.props.handleSearch} 
+                    onBlur={this.props.handleFocusOut}
+                    ></input>
+                </div>
+            )
+        }
+        
+    }
+}
+
+class SuggestionList extends React.Component {
+    render() {
+        let list = []
+        this.props.items.forEach(item => {
+            list.push(<Suggestion item={item} key={item.id} handleSuggestionClick={this.props.handleSuggestionClick}/>)
+        })
+        let height = list.length * 32
+
+        return (
+            <div id="suggestionlist" style={{height: height, overflowY: height < 300 ? "hidden": "auto"}}>
+                {list}
+            </div>
+        )
+    }
+}
+
+class Suggestion extends React.Component {
+    handleClick = () => {
+        this.props.handleSuggestionClick(this.props.item)
+    }
+    render() {
+        return (
+            <div className="suggestion" onClick={this.handleClick} >
+                <img src={this.props.item.getImage()} alt={this.props.item.name}/>
+                <p>{this.props.item.name}</p>
             </div>
         )
     }
@@ -160,7 +212,9 @@ class Isaacdle extends React.Component {
         this.state = {
             guesses: [],
             items: [...items],
-            answer: items[Math.floor(Math.random()*items.length)]
+            answer: items[Math.floor(Math.random()*items.length)],
+            search: "",
+            show: false
         }
     }
 
@@ -174,19 +228,49 @@ class Isaacdle extends React.Component {
                 items.splice(i, 1)
                 this.setState({
                     guesses: guesses,
-                    items: items
-                    
+                    items: items,
+                    search: ""
                 })
-                event.target.value = ""
             }
             
         }
+    }
+    handleFocusOut = () => {
+        setTimeout(() => {
+            this.setState({
+                show: false
+            })
+        }, 100);
+        
+    }
+
+    handleSearch = (e) => {
+        this.setState({
+            search: e.target.value,
+            show: true
+        })
+    }
+
+    handleSuggestionClick = (item) => {
+        let input = document.querySelector("input")
+        input.focus()
+        this.setState({
+            search: item.name,
+            show: false
+        })
     }
 
     render() {
         return(
             <>
-                <GuessInput keyPress={this.handleEnter}/>
+                <GuessInput 
+                keyPress={this.handleEnter} 
+                items={this.state.items} 
+                search={this.state.search}
+                show={this.state.show}
+                handleSearch={this.handleSearch}
+                handleSuggestionClick={this.handleSuggestionClick}
+                handleFocusOut={this.handleFocusOut}/>
                 <Guesses guesses={this.state.guesses} answer={this.state.answer}/>
             </>
         )
