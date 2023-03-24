@@ -184,7 +184,6 @@ class Isaacdle extends React.Component {
     }
 
     render() {
-        console.log(this.state.answer);
         return(
             <>
                 <GuessInput keyPress={this.handleEnter}/>
