@@ -1352,7 +1352,7 @@
         "stats": {},
         "effects": ["Replaces tears with a knife that can go through enemies and obstacles", "Holding the fire button inceases its range and power"],
         "set": ["Yes Mother?"],
-        "pool": ["Treasure room"],
+        "pool": ["Treasure room", "Devil room"],
         "type": "Passive"
     },
     {
@@ -1788,6 +1788,612 @@
         "stats": {},
         "effects": ["Chance to fire a tooth which deals x3.2 Isaac's damage"],
         "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 151,
+        "name": "The Mulligan",
+        "sub": "They grow inside", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Tears have a 1/6 chance to spawn a Blue fly when they hit an enemy"],
+        "set": ["Beelzebub"],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 152,
+        "name": "Technology 2",
+        "sub": "Extra laser", 
+        "quality": 2,
+        "stats": {
+            "tears multiplier": "x0.66"
+        },
+        "effects": ["Isaac's right eye shoots an unlimited range piercing laser which fires continuously"] ,
+        "set" : [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 153,
+        "name": "Mutant Spider",
+        "sub": "Quad shot", 
+        "quality": 3,
+        "stats": {
+            "tears multiplier": "x0.42"
+        },
+        "effects": ["Isaac fires 4 tears at the same time"],
+        "set": ["Spider Baby"],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 154,
+        "name": "Chemical Peel",
+        "sub": "DMG up", 
+        "quality": 2,
+        "stats": {
+            "flat damage": "+2"
+        },
+        "effects": ["Only affects the left eye"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 155,
+        "name": "The Peeper",
+        "sub": "Plop!", 
+        "quality": 2,
+        "stats": {"damage multiplier": "x1.35"},
+        "effects": ["The damage multiplier only affects the left eye", "Spawns a familiar that moves diagonally in the room, blocking shots and dealing contact damage"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 156,
+        "name": "Habit",
+        "sub": "Item martyr", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Isaac gains 1 charge on his active item when getting hit"] ,
+        "set" : [],
+        "pool": ["Angel room", "Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 157,
+        "name": "Bloody Lust",
+        "sub": "RAGE!", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Increases Isaac's damage for the floor when getting hit"],
+        "set": [],
+        "pool": ["Treasure room", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 158,
+        "name": "Crystal Ball",
+        "sub": "I see my future", 
+        "quality": 3,
+        "stats": {
+            "planetarium chance": "+15%"
+        },
+        "effects": ["On use : reveals the whole floor (except the Super Secret Room), drops a soul heart, card or rune"],
+        "set": [],
+        "pool": ["Fortune telling machine"],
+        "type": "Active",
+        "charge": "6"
+    },
+    {
+        "id": 159,
+        "name": "Spirit of the Night",
+        "sub": "Scary", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Grants flight", "Spectral tears"],
+        "set": ["Leviathan"],
+        "pool": ["Devil room", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 160,
+        "name": "Crack the Sky",
+        "sub": "Holy white death", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Summons 5 beams of light in random locations, dealing large amounts of damage"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Active",
+        "charge": "4"
+    },
+    {
+        "id": 161,
+        "name": "Ankh",
+        "sub": "Eternal life?", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Upon death, respawns as Blue Baby"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 162,
+        "name": "Celtic Cross",
+        "sub": "Blessing of protection", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Chance to trigger the Book of Shadows shield upon taking damage, that lasts 7 seconds"],
+        "set": ["Seraphim"],
+        "pool": ["Angel room", "Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 163,
+        "name": "Ghost Baby",
+        "sub": "Spectral buddy", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Spawns a familiar that shoots spectral tears"],
+        "set": ["Conjoined"],
+        "pool": ["Treasure room", "Devil room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 164,
+        "name": "The Candle",
+        "sub": "Reusable flames", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Isaac hold the candle, when pressing a fire button a blue flame will be shot"],
+        "set": [],
+        "pool": ["Shop"],
+        "type": "Active",
+        "charge": "Unlimited"
+    },
+    {
+        "id": 165,
+        "name": "Cat-O-Nine-Tails",
+        "sub": "Shot speed + damage up", 
+        "quality": 3,
+        "stats": {
+            "damage": "+1",
+            "shot speed": "0.23"
+        },
+        "effects": [] ,
+        "set" : [],
+        "pool": ["Boss"],
+        "type": "Passive"
+    },
+    {
+        "id": 166,
+        "name": "D20",
+        "sub": "Reroll the basics", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Rerolls all pickups, chests and trinekts in the current room"],
+        "set": [],
+        "pool": ["Treasure room", "Ultra secret room"],
+        "type": "Active",
+        "charge": "6"
+    },
+    {
+        "id": 167,
+        "name": "Harlequin Baby",
+        "sub": "Double shot buddy", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Spawns a familiar that shoots two tears in a V-pattern"],
+        "set": ["Conjoined"],
+        "pool": ["Treasure room", "Ultra secret room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 168,
+        "name": "Epic Fetus",
+        "sub": "On-demand air strike", 
+        "quality": 4,
+        "stats": {},
+        "effects": ["Isaac's tears are replaced with guided missiles. Pressing the fire buttons spawns a crosshair that can be moved freely, summoning a missile to its position from above 1.5 seconds later"],
+        "set": [],
+        "pool": ["Secret room", "Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 169,
+        "name": "Polyphemus",
+        "sub": "Meag tears", 
+        "quality": 4,
+        "stats": {
+            "damage": "+4",
+            "damage multiplier": "x2",
+            "tears multiplier": "x0.42"
+        },
+        "effects": ["If a tear kills an enemy and has left over damage, the tear continues on with the remaining damage"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 170,
+        "name": "Daddy Longlegs",
+        "sub": "Daddy's love", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Daddy Long Leg's follows Isaac and stomps on enemies, dealing damage"],
+        "set": ["Spider Baby"],
+        "pool": ["Treasure room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 171,
+        "name": "Spider Butt",
+        "sub": "Mass enemy slowdown + damage", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Deals 10 damage to all enemies and slows them for 4 seconds", "Enemies killed by it will spawn 1-3 Blue spiders"],
+        "set": ["Spider Baby"],
+        "pool": ["Treasure room"],
+        "type": "Active",
+        "charge": "2"
+    },
+    {
+        "id": 172,
+        "name": "Sacrificial Dagger",
+        "sub": "My fate protects me", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Spawns an orbital familiar that blocks enemy shots and deals high contact damage"],
+        "set": [],
+        "pool": ["Treasure room", "Devil room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 173,
+        "name": "Mitre",
+        "sub": "Blessing of purity", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Grants a chance to convert red heart pickups into soul hearts"],
+        "set": ["Seraphim"],
+        "pool": ["Angel room", "Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 174,
+        "name": "Rainbow Baby",
+        "sub": "Random buddy", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Spawns a familiar that shoots tears with random effects"],
+        "set": ["Conjoined"],
+        "pool": ["Treasure room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 175,
+        "name": "Dad's Key",
+        "sub": "Opens all doors...", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Opens all doors in the current room"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Active",
+        "charge": "2" 
+    },
+    {
+        "id": 176,
+        "name": "Stem Cells",
+        "sub": "HP + shot speed up", 
+        "quality": 1,
+        "stats": {
+            "hp": "+1",
+            "shot speed": "+0.16"
+        },
+        "effects": ["Heals one red heart"],
+        "set": [],
+        "pool": ["Treasure room", "Boss", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 177,
+        "name": "Portable Slot",
+        "sub": "Gamble 24/7", 
+        "quality": 0,
+        "stats": {},
+        "effects": ["Upon use, consumes 1 coin a has a chance to drop a random pickup"],
+        "set": [],
+        "pool": ["Shop", "Ultra secret room"],
+        "type": "Active",
+        "charge": "Unlimited"
+    },
+    {
+        "id": 178,
+        "name": "Holy Water",
+        "sub": "Splash!", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Spawns a familiar that launches itself in the direction Isaac shoots. Hitting an enemy will shatter it, creating blue creep that damages and petrifies enemies"],
+        "set" : [],
+        "pool": ["Treasure room", "Angel room"],
+        "type": "Familiar"  
+    },
+    {
+        "id": 179,
+        "name": "Fate",
+        "sub": "Flight eternal", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Grants flight", "Grants an eternal heart"],
+        "set": [],
+        "pool": ["Golden chest"],
+        "type": "Passive"
+    },
+    {
+        "id": 180,
+        "name": "The Black Bean",
+        "sub": "Toot on touch", 
+        "quality": 0,
+        "stats": {},
+        "effects": ["When taking damage, Isaac farts 5 times quickly, inflicting poison and knocking back enemies and projectiles"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 181,
+        "name": "White Pony",
+        "sub": "Flight + holy death", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Grants flight", "Set Isaac's speed to 1.5 if he has less", "On use, charges forward, dealing contact damage and giving invincibility, as well as creating beams of light"],
+        "set": [],
+        "pool": ["Conquest (boss)"],
+        "type": "Active",
+        "charge": "2"
+    },
+    {
+        "id": 182,
+        "name": "Sacred Heart",
+        "sub": "Homing shots + DMG up", 
+        "quality": 4,
+        "stats": {
+            "flat damage": "+1",
+            "damage multiplier": "x2.3",
+            "tears": "-0.4",
+            "shot speed": "-0.25",
+            "hp": "+1"
+        },
+        "effects": ["Homing tears", "Full health"],
+        "set": ["Seraphim"],
+        "pool": ["Angel room", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 183,
+        "name": "Tooth Picks",
+        "sub": "Tears + shot speed up", 
+        "quality": 3,
+        "stats": {
+            "tears": "+0.7",
+            "shot speed": "+0.16"
+        },
+        "effects": [],
+        "set": [],
+        "pool": ["Boss"],
+        "type": "Passive"
+    },
+    {
+        "id": 184,
+        "name": "Holy Grail",
+        "sub": "Flight + HP up", 
+        "quality": 3,
+        "stats": {
+            "hp": "+1"
+        },
+        "effects": ["Grants flight", "Heals one red heart"],
+        "set": ["Seraphim"],
+        "pool": ["Angel room"],
+        "type": "Passive"
+    },
+    {
+        "id": 185,
+        "name": "Dead Dove",
+        "sub": "Flight + spectral tears", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Grants flight", "Spectral tears"],
+        "set": ["Seraphim"],
+        "pool": ["Angel room"],
+        "type": "Passive"
+    },
+    {
+        "id": 186,
+        "name": "Blood Rights",
+        "sub": "Mass enemy damage at a cost", 
+        "quality": 0,
+        "stats": {},
+        "effects": ["Upon use, takes of full heart of damage and inflicts 40 damage to all enemies in the room"],
+        "set": [],
+        "pool": ["Treasure room", "Devil room"],
+        "type": "Active",
+        "charge": "Unlimited"
+    },
+    {
+        "id": 187,
+        "name": "Guppy's Hair Ball",
+        "sub": "Swing it", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Spawns a familiar that loosely follows Isaac, blocks shots, and can be swung like a flail to damage enemies"],
+        "set": ["Guppy"] ,
+        "pool" : ["Devil room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 188,
+        "name": "Abel",
+        "sub": "Mirrored buddy", 
+        "quality": 0,
+        "stats": {},
+        "effects": ["Spawns a familiar that mirros Isaac's movement and shoots toward him"],
+        "set": ["Conjoined"],
+        "pool": ["Treasure room"],
+        "type": "Familiar"
+    },
+    {
+        "id": 189,
+        "name": "SMB Super Fan",
+        "sub": "All stats up", 
+        "quality": 3,
+        "stats": {
+            "hp": "+1",
+            "damage": "+0.3",
+            "tears": "+0.2",
+            "speed":"+0.2",
+            "range": "+2.5"
+        },
+        "effects": ["Full health"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 190,
+        "name": "Pyro",
+        "sub": "99 bombs", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Gives Isaac 99 bombs"],
+        "set": [],
+        "pool": ["Treasure room", "Secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 191,
+        "name": "3 Dollar Bill",
+        "sub": "Rainbow tears", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Gives Isaac random tear effects"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 192,
+        "name": "Telepathy for Dummies",
+        "sub": "Temporary pyschic shot", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Grants homing tears and +3 range for the current room"],
+        "set": ["Bookworm"],
+        "pool": ["Treasure room", "Library"],
+        "type": "Active",
+        "charge": "2"
+    },
+    {
+        "id": 193,
+        "name": "MEAT!",
+        "sub": "DMG + HP up", 
+        "quality": 2,
+        "stats": {
+            "hp": "+1",
+            "damage":"+0.3"
+        },
+        "effects": ["Heals one red heart"],
+        "set": [],
+        "pool": ["Boss", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 194,
+        "name": "Magic 8 Ball",
+        "sub": "Shot speed up", 
+        "quality": 1,
+        "stats": {
+            "shot speed": "+0.16",
+            "planetarium chance": "+15%"
+        },
+        "effects": ["Drops a random card"],
+        "set": [],
+        "pool": ["Boss"],
+        "type": "Passive"
+    },
+    {
+        "id": 195,
+        "name": "Mom's Coin Purse",
+        "sub": "What's all this...?", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Spawns 4 random pills"],
+        "set": ["Yes Mother?"],
+        "pool": ["Boss", "Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 196,
+        "name": "Squeezy",
+        "sub": "Tears up", 
+        "quality": 3,
+        "stats": {
+            "tears": "+0.4"
+        },
+        "effects": ["Spawns 2 soul hearts"],
+        "set": [],
+        "pool": ["Boss"],
+        "type": "Passive"
+    },
+    {
+        "id": 197,
+        "name": "Jesus Juice",
+        "sub": "Damage + range up", 
+        "quality": 2,
+        "stats": {
+            "damage": "+0.5",
+            "range":"+1.5"
+        },
+        "effects": [],
+        "set": [],
+        "pool": ["Angel room", "Boss"],
+        "type": "Passive"
+    },
+    {
+        "id": 198,
+        "name": "Box",
+        "sub": "Stuff", 
+        "quality": 0,
+        "stats": {},
+        "effects": ["Spawns a coin, a key, a bomb, a heart, a card/rune, a pill and a trinket"],
+        "set": [],
+        "pool": ["Boss"],
+        "type": "Passive"
+    },
+    {
+        "id": 199,
+        "name": "Mom's Key",
+        "sub": "Better chest loot +2 keys", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Gives Isaac 2 keys", "Increases chest's loot"],
+        "set": ["Yes Mother?"],
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 200,
+        "name": "Mom's Eyeshadow",
+        "sub": "Charm tears", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Chance to fire a charming tear"],
+        "set": ["Yes Mother?"],
         "pool": ["Treasure room"],
         "type": "Passive"
     }
