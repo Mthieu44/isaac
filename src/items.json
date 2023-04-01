@@ -2396,5 +2396,586 @@
         "set": ["Yes Mother?"],
         "pool": ["Treasure room"],
         "type": "Passive"
+    },
+    {
+        "id": 201,
+        "name": "Iron Bar",
+        "sub": "DMG up + concussive tear", 
+        "quality": 2,
+        "stats": {
+            "damage":"+0.3"
+        },
+        "effects": ["Chance to fire a concussive tear"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 202,
+        "name": "Midas' Touch",
+        "sub": "Golden touch", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Petrifies and turns enemies into gold upon contact with Isaac"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 203,
+        "name": "Humbling Bundle",
+        "sub": "1+1 free 4Evar", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["50% chance to transform bombs, keys, coins and red hearts to their doubled versions"],
+        "set": [],
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 204,
+        "name": "Fanny Pack",
+        "sub": "Filled with goodies", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Chance to drop a pickup when taking damage"],
+        "set": [],
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 205,
+        "name": "Sharp Plug",
+        "sub": "Infinite charge... at a cost", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Damages Isaac in exchange for fully recharging the current actived item"],
+        "set": [],
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 206,
+        "name": "Guillotine",
+        "sub": "DMG + tears up. An out-of-body experience !", 
+        "quality": 2,
+        "stats": {
+            "damage":"+1",
+            "tears":"+0.5"
+        },
+        "effects": ["Isaac's head rotates around his body, acting like an orbital familiar. His tears still originate from the head"] ,
+        "set" : [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 207,
+        "name": "Ball of Bandages",
+        "sub": "Gotta lick 'em all!", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Spawns an orbital familiar, that levels up with every subsequent Ball of Bandages obtained."],
+        "set": [],
+        "pool": ["Harbingers (boss)"],
+        "type": "Familiar"
+    },
+    {
+        "id": 208,
+        "name": "Champion Belt",
+        "sub": "DMG + challenge up", 
+        "quality": 3,
+        "stats": {
+            "damage":"+1"
+        },
+        "effects": ["Increases the chance for champion enemies to spawn"],
+        "set": [],
+        "pool": ["Shop", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 209,
+        "name": "Butt Bombs",
+        "sub": "Toxic blast +5 bombs", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Gives Isaac 5 bombs", "On explosion, confuses and deals damages to all enemies in the room"],
+        "set": ["Oh Crap"],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 210,
+        "name": "Gnawed Leaf",
+        "sub": "Unbreakable", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["When standing still and not shooting, Isaac turns into an invulnerable statue"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 211,
+        "name": "Spiderbaby",
+        "sub": "Spider revenge", 
+        "quality": 0,
+        "stats": {},
+        "effects": ["Spawns 3-5 blue spiders when Isaac gets hit"],
+        "set": ["Spider Baby"],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 212,
+        "name": "Guppy's Collar",
+        "sub": "Eternal life?", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Grants a permanent 50% to respawn after death"] ,
+        "set" : ["Guppy"],
+        "pool": ["Curse room", "Devil room"],
+        "type": "Passive"  
+    },
+    {
+        "id": 213,
+        "name": "Lost Contact",
+        "sub": "Shielded tears", 
+        "quality": 2,
+        "stats": {
+            "shot speed":"-0.16"
+        },
+        "effects": ["Isaac's tear can block and destroy enemy shots"],
+        "set": [] ,
+        "pool" : ["Secret room", "Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 214,
+        "name": "Anemic",
+        "sub": "Toxic blood", 
+        "quality": 1,
+        "stats": {
+            "range":"+1.5"
+        },
+        "effects": ["After taking damage, Isaac leaves red creep until he leaves the room"],
+        "set": [] ,
+        "pool" : ["Treasure room", "Ultra secret room"],
+        "type": "Passive"  
+    },
+    {
+        "id": 215,
+        "name": "Goat Head",
+        "sub": "He accepts your offering", 
+        "quality": 3,
+        "stats": {
+            "deal chance": "100%"
+        },
+        "effects": [],
+        "set": [],
+        "pool": ["Curse room", "Devil room"],
+        "type": "Passive"
+    },
+    {
+        "id": 216,
+        "name": "Ceremonial Robes",
+        "sub": "DMG + evil up", 
+        "quality": 3,
+        "stats": {
+            "damage":"+1"
+        },
+        "effects": ["Grants 3 black hearts"],
+        "set": [],
+        "pool": ["Curse room", "Devil room"],
+        "type": "Passive"
+    },
+    {
+        "id": 217,
+        "name": "Mom's Wig",
+        "sub": "You feel itchy", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Chance to spawn blue spiders when shooting tears", "Heals one red heart"],
+        "set": ["Yes Mother?"],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 218,
+        "name": "Placenta",
+        "sub": "Regeneration + HP up", 
+        "quality": 2,
+        "stats": {
+            "hp":"+1"
+        },
+        "effects": ["Grants a chance to regenerate half a red heart every minute", "Heals one red heart"] ,
+        "set" : [],
+        "pool": ["Boss"],
+        "type": "Passive"  
+    },
+    {
+        "id": 219,
+        "name": "Old Bandage",
+        "sub": "HP up", 
+        "quality": 2,
+        "stats": {
+            "hp":"+1"
+        },
+        "effects": ["Chance to drop a red heart after taking damage"],
+        "set": [],
+        "pool": ["Boss"],
+        "type": "Passive"
+    },
+    {
+        "id": 220,
+        "name": "Sad Bombs",
+        "sub": "Tear blasts +5 bombs", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["On explosion, bombs shoots 10 tears in every direction", "Gives Isaac 5 bombs"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 221,
+        "name": "Rubber Cement",
+        "sub": "Bouncing tears", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Tears bounce off walls, obstacles and enemies"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 222,
+        "name": "Anti-Gravity",
+        "sub": "Anti-gravity tears + tears up", 
+        "quality": 2,
+        "stats": {
+            "tears":"+1"
+        },
+        "effects": ["Holding the fire buttons causes tears to hover in midair. When released, the tears will all shoot in the direction they were originally fired"],
+        "set": [] ,
+        "pool" : ["Treasure room"],
+        "type": "Passive"  
+    },
+    {
+        "id": 223,
+        "name": "Pyromaniac",
+        "sub": "It hurts so good +5 bombs", 
+        "quality": 4,
+        "stats": {},
+        "effects": ["All explosions heal red hearts instead of damaging Isaac", "Gives Isaac 5 bombs"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 224,
+        "name": "Cricket's Body",
+        "sub": "Bursting shots + tears up", 
+        "quality": 3,
+        "stats": {
+            "tears":"+0.5",
+            "range multiplier":"x0.8"
+        },
+        "effects": ["Tears split in 4 uppon impact with something"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 225,
+        "name": "Gimpy",
+        "sub": "Sweet suffering", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Chance to drop a soul heart when taking damage", "Chance for monsters to drop a half red heart after being killed"],
+        "set": [],
+        "pool": ["Treasure room", "Devil room", "Curse room"],
+        "type": "Passive"
+    },
+    {
+        "id": 226,
+        "name": "Black Lotus",
+        "sub": "HP up x3!", 
+        "quality": 2,
+        "stats": {
+            "hp":"+1"
+        },
+        "effects": ["Grants 1 soul heart and 1 black heart"],
+        "set": [],
+        "pool": ["Secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 227,
+        "name": "Piggy Bank",
+        "sub": "My life savings", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["When taking damage, spawns 1-2 coins", "Gives Isaac 3 coins"],
+        "set": [],
+        "pool": ["Treasure room", "Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 228,
+        "name": "Mom's Perfume",
+        "sub": "Fear shot + tears up", 
+        "quality": 2,
+        "stats": {
+            "tears":"+0.5"
+        },
+        "effects": ["Chance to fire a fear tear"],
+        "set": ["Yes Mother?"],
+        "pool": ["Treasure room"] ,
+        "type" : "Passive"  
+    },
+    {
+        "id": 229,
+        "name": "Monstro's Lung",
+        "sub": "Charged burst attack", 
+        "quality": 2,
+        "stats": {
+            "tears multiplier":"x0.23"
+        },
+        "effects": ["Grants a charged shot that fires 14 tears in the same fashion as Monstro"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 230,
+        "name": "Abaddon",
+        "sub": "Evil + DMG up + fear shot", 
+        "quality": 3,
+        "stats": {
+            "damage":"+1.5",
+            "speed":"+0.2"
+        },
+        "effects": ["Replaces all red hearts by black hearts", "Grants 2 black hearts", "Chance to fire a fear tear"],
+        "set": ["Leviathan"],
+        "pool": ["Devil room", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 231,
+        "name": "Ball of Tar",
+        "sub": "Sticky feet...", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Chance to fire a slowing tear", "Isaac leaves black creep"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 232,
+        "name": "Stop Watch",
+        "sub": "Let's slow this down a bit...", 
+        "quality": 4,
+        "stats": {
+            "speed":"+0.3"
+        },
+        "effects": ["Slows down all enemies to 80% of their speed"],
+        "set": [],
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 233,
+        "name": "Tiny Planet",
+        "sub": "Orbiting tears + range up", 
+        "quality": 0,
+        "stats": {
+            "range":"+6.5"
+        },
+        "effects": ["Spectral tears", "Tears orbit around Isaac"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 234,
+        "name": "Infestation 2",
+        "sub": "Infestation shot", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Spawns a blue spider from killed enemies"],
+        "set": ["Spider Baby"],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 236,
+        "name": "E. Coli",
+        "sub": "Turdy touch", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Turns enemies into poop upon contact with Isaac"],
+        "set": ["Oh Crap"],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 237,
+        "name": "Death's Touch",
+        "sub": "Piercing shots + DMG up", 
+        "quality": 3,
+        "stats": {
+            "damage":"+1.5",
+            "tears":"-0.3"
+        },
+        "effects": ["Piercing tears", "Tears are replaced by large scythes"],
+        "set": [],
+        "pool": ["Treasure room", "Devil room"],
+        "type": "Passive"
+    },
+    {
+        "id": 238,
+        "name": "Key Piece 1",
+        "sub": "???", 
+        "quality": 0,
+        "stats": {},
+        "effects": ["Part of the key to unlock the golden gate in Chest and Dark Room", "Chance to convert red heart pickups into eternal hearts", "Increases Angel Room chance"],
+        "set": [],
+        "pool": ["Uriel (boss)"],
+        "type": "Familiar"
+    },
+    {
+        "id": 239,
+        "name": "Key Piece 2",
+        "sub": "???", 
+        "quality": 0,
+        "stats": {},
+        "effects": ["Part of the key to unlock the golden gate in Chest and Dark Room", "Chance to convert red heart pickups into eternal hearts", "Increases Angel Room chance"],
+        "set": [],
+        "pool": ["Gabriel (boss)"],
+        "type": "Familiar"
+    },
+    {
+        "id": 240,
+        "name": "Experimental Treatment",
+        "sub": "Some stats up, some stats down", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Increases 4 random stats, decreases 2 other stats"],
+        "set": ["Spun"],
+        "pool": ["Treasure room", "Boss"],
+        "type": "Passive"
+    },
+    {
+        "id": 241,
+        "name": "Contract From Below",
+        "sub": "Wealth... but at what cost?", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Doubles pickups and chests earned from cleaning a room", "Grants a 1/3 chance to completely remove the room clear award"],
+        "set": [],
+        "pool": ["Devil room", "Curse room"],
+        "type": "Passive"
+    },
+    {
+        "id": 242,
+        "name": "Infamy",
+        "sub": "Blocks damage... sometimes", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Grants a 50% chance to block projectiles"],
+        "set": [],
+        "pool": ["Treasure room", "Secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 243,
+        "name": "Trinity Shield",
+        "sub": "You feel guarded", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Grants a shield that block projectiles, facing in the direction Isaac fires"],
+        "set": [],
+        "pool": ["Angel room"],
+        "type": "Passive"
+    },
+    {
+        "id": 244,
+        "name": "Tech.5",
+        "sub": "It's still being tested...", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Grants an unlimited range piercing laser with random rate of fire that does not replace tears"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 245,
+        "name": "20/20",
+        "sub": "Double shot", 
+        "quality": 4,
+        "stats": {
+            "damage multiplier": "x0.8"
+        },
+        "effects": ["Double shot"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 246,
+        "name": "Blue Map",
+        "sub": "Secrets", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Reveals the locations of secret rooms and super secret rooms on the map"],
+        "set": [],
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 247,
+        "name": "BFFS!",
+        "sub": "Your friends rule!", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Improves the effectiveness of most of the familiars"],
+        "set": [],
+        "pool": ["Shop", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 248,
+        "name": "Hive Mind",
+        "sub": "Giant spider and flies", 
+        "quality": 2,
+        "stats": {},
+        "effects": ["Blue spiders, blue flies and locusts deals double damage", "Fly and spider familiars become stronger"],
+        "set": ["Beelzebub", "Spider Baby"],
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 249,
+        "name": "There's Options",
+        "sub": "More options", 
+        "quality": 3,
+        "stats": {},
+        "effects": ["Two items appear after defeating a boss, only one can be taken"],
+        "set": [],
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 250,
+        "name": "Bogo Bombs",
+        "sub": "1+1 BOOM!", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["All bomb pickups become double bombs"],
+        "set": [],
+        "pool": ["Shop"],
+        "type": "Passive"
     }
 ]

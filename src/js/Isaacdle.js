@@ -216,6 +216,7 @@ class Isaacdle extends React.Component {
             search: "",
             show: false
         }
+        console.log(this.state.answer);
     }
 
     handleEnter = (event) => {
@@ -240,7 +241,7 @@ class Isaacdle extends React.Component {
             this.setState({
                 show: false
             })
-        }, 100);
+        }, 200);
         
     }
 
