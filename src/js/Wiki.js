@@ -6,7 +6,6 @@ import Items from '../items.json';
 import Item from './item';
 const items = Items.map(obj => new Item(obj))
 
-
 class Wiki extends React.Component {
   constructor(props){
     super(props)

@@ -107,7 +107,7 @@
         "Affect enemies": [9, 208, 225, 232],
         "Effect on all enemies in a room": [35, 39, 41, 66, 93, 171, 186, 209],
         "One-time use attack": [38, 49, 111, 130, 160, 164, 181],
-        "Explosion": [40, 47, 149, 168],
+        "Explosion": [40, 42, 47, 149, 168],
         "Spawns creep": [56, 178, 214, 231],
         "Makes fire": [164],
         "Farts": [180]

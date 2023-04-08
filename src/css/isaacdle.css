@@ -71,9 +71,13 @@
 }
 
 .suggestion:hover {
-    background-color: #ffffff2c;
+    background-color: #ffffff42;
     transition: 0.2s ease-in-out;
     cursor: pointer;
+}
+.currentSug {
+    background-color: #ffffff2c;
+    transition: 0.2s ease-in-out;
 }
 
 .suggestion p {
@@ -155,6 +159,8 @@
     font-family: tempesta;
     font-size: 15px;
     text-align: center;
+    opacity: 0;
+    transition: 0.8s ease;
 }
 
 .smallbox {
