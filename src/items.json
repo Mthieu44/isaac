@@ -2977,5 +2977,152 @@
         "set": [],
         "pool": ["Shop"],
         "type": "Passive"
+    },
+    {
+        "id": 251,
+        "name": "Starter Deck",
+        "sub": "Extra card room",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Allows Isaac to hold 2 cards or runes", "Replaces all pills with cards", "Spawns a random card"],
+        "set": [],
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 252,
+        "name": "Little Baggy",
+        "sub": "Extra pill room",
+        "quality": 0,
+        "stats": {},
+        "effects": ["Allows Isaac to hold 2 pills", "Replaces all cards with pills", "Spawns a random pill"],
+        "set": [],
+        "pool": ["Shop"],
+        "type": "Passive"
+    },
+    {
+        "id": 253,
+        "name": "Magic Scab",
+        "sub": "HP + luck up",
+        "quality": 2,
+        "stats": {
+            "hp":"+1",
+            "luck":"+1"
+        },
+        "effects": ["Heals one red heart"],
+        "set": [],
+        "pool": ["Boss", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 254,
+        "name": "Blood Clot",
+        "sub": "DMG + range up",
+        "quality": 2,
+        "stats": {
+            "flat damage":"+1",
+            "range":"+2.75"
+        },
+        "effects": ["Only affects the left eye"],
+        "set": [],
+        "pool": ["Boss", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 255,
+        "name": "Screw",
+        "sub": "Tears + shot speed up",
+        "quality": 3,
+        "stats": {
+            "tears":"+0.5",
+            "shot speed":"+0.2"
+        },
+        "effects": [],
+        "set": [],
+        "pool": ["Boss"],
+        "type": "Passive"
+    },
+    {
+        "id": 256,
+        "name": "Hot Bombs",
+        "sub": "Burning blast +5 bombs",
+        "quality": 1,
+        "stats": {},
+        "effects": ["Gives Isaac 5 bombs", "Bombs places by Isaac deal damage to enemies and leave a fire upon exploding", "Grants immunity to static fires"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 257,
+        "name": "Fire Mind",
+        "sub": "Flaming tears",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Tears inflict burn on enemies", "Tears have a chance to explode on impact with an enemy, which creates a fire"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Passive"
+    },
+    {
+        "id": 258,
+        "name": "Missing No.",
+        "sub": "Syntax error",
+        "quality": 0,
+        "stats": {},
+        "effects": ["Randomizes all passive items and stats upon pickup and at the start of each floor"],
+        "set": [],
+        "pool": ["Secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 259,
+        "name": "Dark Matter",
+        "sub": "DMG up + fear shot",
+        "quality": 3,
+        "stats": {
+            "damage":"+1"
+        },
+        "effects": ["Chance to fire a fear tear"],
+        "set": [],
+        "pool": ["Devil room"],
+        "type": "Passive"
+    },
+    {
+        "id": 260,
+        "name": "Black Candle",
+        "sub": "Curse immunity + evil up",
+        "quality": 3,
+        "stats": {
+            "deal chance":"+15%"
+        },
+        "effects": ["Grants immunity to floor curses", "Grants 1 black heart"],
+        "set": [],
+        "pool": ["Shop","Curse room"],
+        "type": "Passive"
+    },
+    {
+        "id": 261,
+        "name": "Proptosis",
+        "sub": "Short range mega tears",
+        "quality": 3,
+        "stats": {
+            "damage":"+0.5"
+        },
+        "effects": ["Tear size multiplier: x2", "Tears shrink and deal less damage as they travel farther, starting at 3x damage at point blank"],
+        "set": [],
+        "pool": ["Treasure room", "Ultra secret room"],
+        "type": "Passive"
+    },
+    {
+        "id": 262,
+        "name": "Missing Page 2",
+        "sub": "Evil up. Your enemies will pay!",
+        "quality": 0,
+        "stats": {},
+        "effects": ["Grants 1 black heart", "Adds +40 damage to The Necronomicon and similar effects", "Deals 80 damage to all enemies in the room when Isaac total health is at 1 heart"],
+        "set": [],
+        "pool": ["Devil room", "Secret room"],
+        "type": "Passive"
     }
 ]
