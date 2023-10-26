@@ -35,6 +35,9 @@ class Charge extends React.Component {
                 case "One-time":
                     img = <img src={require(`../images/charge/0.png`)} alt="Charge bar" title="One-time use"/>
                     break;
+                case "Variable":
+                    img = <img src={require(`../images/charge/variable.gif`)} alt="Charge bar" title="Variable charge"/>
+                    break;
             
                 default:
                     img = <img src={require(`../images/charge/${this.props.charge}.png`)} alt="Charge bar" title={`${this.props.charge} rooms`}/>
