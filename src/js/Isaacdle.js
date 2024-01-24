@@ -197,7 +197,7 @@ class Guess extends React.Component {
 
     componentDidMount() {
         for (let i = 0; i < 7; i++) {
-            this.timedAppear(i*500, `box${i+1}`)
+            this.timedAppear(i*350, `box${i+1}`)
         }
     }
 
@@ -315,6 +315,7 @@ class Isaacdle extends React.Component {
     }
 
     render() {
+        console.log(this.state.answer)
         return(
             <>
                 <GuessInput 

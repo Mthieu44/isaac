@@ -1954,7 +1954,7 @@
         "set": [],
         "pool": ["Shop"],
         "type": "Active",
-        "charge": "Unlimited"
+        "charge": "4 seconds"
     },
     {
         "id": 165,
@@ -3381,7 +3381,7 @@
         "set": [],
         "pool": ["Treasure room"],
         "type": "Active",
-        "charge": 2
+        "charge": "2"
     },
     {
         "id": 286,
@@ -3429,6 +3429,66 @@
         "set": [],
         "pool": ["Treasure room", "Ultra secret room"],
         "type": "Active",
+        "charge": "4 seconds"
+    },
+    {
+        "id": 290,
+        "name": "The Jar",
+        "sub": "Save your life",
+        "quality": 0,
+        "stats": {},
+        "effects": ["Allows you to pickup up to 4 red hearts if at full health, dropping them on the floor when activating"],
+        "set": [],
+        "pool": ["Shop"],
+        "type": "Active",
         "charge": "Unlimited"
+    },
+    {
+        "id": 291,
+        "name": "Flush!",
+        "sub": "...", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Turns non-boss enemies into poop", "Insta kills poop-themed bosses"],
+        "set": ["Oh Crap"],
+        "pool": ["Treasure room"],
+        "type": "Active",
+        "charge":"4"
+    },
+    {
+        "id": 292,
+        "name": "Satanic Bible",
+        "sub": "Reusable evil... but at what cost?", 
+        "quality": 4,
+        "stats": {},
+        "effects": ["Upon use, grants 1 black heart", "Once used, replaces the boss room item on the current floor with a Devil Deal"],
+        "set": ["Bookworm"],
+        "pool": ["Library", "Devil room", "Treasure room"],
+        "type": "Active",
+        "charge": "6"
+    },
+    {
+        "id": 293,
+        "name": "Head of Krampus",
+        "sub": "Krampus rage",
+        "quality": 2,
+        "stats": {},
+        "effects": ["Fires a brimstone shot in the four cardinal directions"],
+        "set": [],
+        "pool": ["Krampus (boss)"],
+        "type": "Active",
+        "charge": "3"
+    },
+    {
+        "id": 294,
+        "name": "Butter Bean",
+        "sub": "Reusable knock-back", 
+        "quality": 1,
+        "stats": {},
+        "effects": ["Knocks back nearby enemies and projectiles"],
+        "set": [],
+        "pool": ["Treasure room"],
+        "type": "Active",
+        "charge": "3 seconds"
     }
 ]

@@ -40,7 +40,12 @@ class Charge extends React.Component {
                     break;
             
                 default:
-                    img = <img src={require(`../images/charge/${this.props.charge}.png`)} alt="Charge bar" title={`${this.props.charge} rooms`}/>
+                    if (this.props.charge.includes("seconds")){
+                        img = <img src={require(`../images/charge/timed.png`)} alt="Charge bar" title={this.props.charge}/>
+                    }else {
+                        img = <img src={require(`../images/charge/${this.props.charge}.png`)} alt="Charge bar" title={`${this.props.charge} rooms`}/>
+                    }
+                    
                     break;
             }
     
