@@ -2,8 +2,8 @@ import ItemShowcase from './ItemShowcase';
 import Search from './Search';
 import ItemSlider from './ItemSlider';
 import React from 'react';
-import Items from '../items.json';
-import Item from './item';
+import Items from '../../items.json';
+import Item from '../model/item';
 const items = Items.map(obj => new Item(obj))
 
 class Wiki extends React.Component {

@@ -1,9 +1,9 @@
-import q0 from '../images/qualities/quality0.png'
-import q1 from '../images/qualities/quality1.png'
-import q2 from '../images/qualities/quality2.png'
-import q3 from '../images/qualities/quality3.png'
-import q4 from '../images/qualities/quality4.png'
-import itemisaacdle from "../itemsIsaacdle.json"
+import q0 from '../../images/qualities/quality0.png'
+import q1 from '../../images/qualities/quality1.png'
+import q2 from '../../images/qualities/quality2.png'
+import q3 from '../../images/qualities/quality3.png'
+import q4 from '../../images/qualities/quality4.png'
+import itemisaacdle from "../../itemsIsaacdle.json"
 
 
 const qs = [q0, q1, q2, q3, q4]
@@ -16,11 +16,11 @@ export default class Item {
     }
 
     getImage() {
-        if (this.name === "<3"){return require("../images/items/less_than_three.png")}
+        if (this.name === "<3"){return require("../../images/items/less_than_three.png")}
         let str = this.name.replace(/\s+/g, '_')
         str = str.toLowerCase();
         str = str.replace(/[^a-z0-9_]/g, '');
-        return require("../images/items/" + str + ".png")
+        return require("../../images/items/" + str + ".png")
     }
 
     getUrl() {

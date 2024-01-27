@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/itemSlider.css"
+import "../../css/itemSlider.css"
 
 class ItemSlider extends React.Component {
     constructor(props) {

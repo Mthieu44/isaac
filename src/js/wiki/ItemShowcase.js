@@ -1,13 +1,13 @@
 import React from "react";  
-import larrow from '../images/arrow_left.png'
-import rarrow from '../images/arrow_right.png'
-import pedestal from '../images/pedestal.png'
-import q0 from '../images/qualities/quality0.png'
-import q1 from '../images/qualities/quality1.png'
-import q2 from '../images/qualities/quality2.png'
-import q3 from '../images/qualities/quality3.png'
-import q4 from '../images/qualities/quality4.png'
-import '../css/itemSection.css';
+import larrow from '../../images/arrow_left.png'
+import rarrow from '../../images/arrow_right.png'
+import pedestal from '../../images/pedestal.png'
+import q0 from '../../images/qualities/quality0.png'
+import q1 from '../../images/qualities/quality1.png'
+import q2 from '../../images/qualities/quality2.png'
+import q3 from '../../images/qualities/quality3.png'
+import q4 from '../../images/qualities/quality4.png'
+import '../../css/itemSection.css';
 const qs = [q0, q1, q2, q3, q4]
 
 class ItemImage extends React.Component {
@@ -30,20 +30,20 @@ class Charge extends React.Component {
             let img
             switch (this.props.charge) {
                 case "Unlimited":
-                    img = <img src={require(`../images/charge/1.png`)} alt="Charge bar" title="Unlimited"/>
+                    img = <img src={require(`../../images/charge/1.png`)} alt="Charge bar" title="Unlimited"/>
                     break;
                 case "One-time":
-                    img = <img src={require(`../images/charge/0.png`)} alt="Charge bar" title="One-time use"/>
+                    img = <img src={require(`../../images/charge/0.png`)} alt="Charge bar" title="One-time use"/>
                     break;
                 case "Variable":
-                    img = <img src={require(`../images/charge/variable.gif`)} alt="Charge bar" title="Variable charge"/>
+                    img = <img src={require(`../../images/charge/variable.gif`)} alt="Charge bar" title="Variable charge"/>
                     break;
             
                 default:
                     if (this.props.charge.includes("seconds")){
-                        img = <img src={require(`../images/charge/timed.png`)} alt="Charge bar" title={this.props.charge}/>
+                        img = <img src={require(`../../images/charge/timed.png`)} alt="Charge bar" title={this.props.charge}/>
                     }else {
-                        img = <img src={require(`../images/charge/${this.props.charge}.png`)} alt="Charge bar" title={`${this.props.charge} rooms`}/>
+                        img = <img src={require(`../../images/charge/${this.props.charge}.png`)} alt="Charge bar" title={`${this.props.charge} rooms`}/>
                     }
                     
                     break;
@@ -70,7 +70,7 @@ class ItemQualityPool extends React.Component {
         let poolimgs = []
         this.props.pool.sort()
         this.props.pool.forEach(po => {
-            let poolimg = require("../images/pools/" + this.getPoolImg(po) + ".png")
+            let poolimg = require("../../images/pools/" + this.getPoolImg(po) + ".png")
             poolimgs.push(<img key={poolimg} src={poolimg} alt={po} title={po} className="pool"></img>)
         });
 

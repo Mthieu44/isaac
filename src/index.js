@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/index.css';
-import Wiki from './js/Wiki';
+import Wiki from './js/wiki/Wiki';
 import ErrorPage from './js/ErrorPage';
 import Root from './js/Root';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Isaacdle from './js/Isaacdle';
+import Isaacdle from './js/isaacdle/Isaacdle';
 
 
 const router = createBrowserRouter([
