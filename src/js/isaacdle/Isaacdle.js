@@ -29,7 +29,7 @@ class Isaacdle extends React.Component {
             this.state = {
                 guesses: [],
                 items: [...items],
-                answer: items[((getEpochDay() ** 2) * 5) % items.length],
+                answer: items[(getEpochDay() * 8471) % items.length],
                 search: "",
                 show: false,
                 currentSug: -1
