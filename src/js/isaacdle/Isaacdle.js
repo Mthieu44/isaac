@@ -6,16 +6,34 @@ import Guesses from "./Guesses";
 import GuessInput from "./GuessInput";
 const items = Items.map(obj => new Item(obj))
 
+function getEpochDay() {
+    let epoch = Date.now()
+    let epochDay = Math.floor(epoch / 86400000)
+    return epochDay
+}
+
 class Isaacdle extends React.Component {
     constructor(props){
         super(props)
-        this.state = {
-            guesses: [],
-            items: [...items],
-            answer: items[Math.floor(Math.random()*items.length)],
-            search: "",
-            show: false,
-            currentSug: -1
+        if (localStorage.getItem("foundToday") === getEpochDay().toString()){
+            console.log("found today")
+            this.state = {
+                guesses: [],
+                items: [...items],
+                answer: items[Math.floor(Math.random()*items.length)],
+                search: "",
+                show: false,
+                currentSug: -1
+            }
+        } else {
+            this.state = {
+                guesses: [],
+                items: [...items],
+                answer: items[((getEpochDay() ** 2) * 5) % items.length],
+                search: "",
+                show: false,
+                currentSug: -1
+            }
         }
     }
 
@@ -100,22 +118,25 @@ class Isaacdle extends React.Component {
         })
     }
 
-        render() {
-            console.log(this.state.answer)
-            return(
-                <>
-                    <GuessInput 
-                    keyPress={this.handleKeyPress} 
-                    items={this.state.items} 
-                    search={this.state.search}
-                    show={this.state.show}
-                    currentSug={this.state.currentSug}
-                    handleSearch={this.handleSearch}
-                    handleSuggestionClick={this.handleSuggestionClick}
-                    handleFocusOut={this.handleFocusOut}/>
-                    <Guesses guesses={this.state.guesses} answer={this.state.answer}/>
-                </>
-            )
+    render() {
+        console.log(this.state.answer)
+        if (this.state.guesses.findIndex(item => item.name === this.state.answer.name) !== -1) {
+            localStorage.setItem("foundToday", getEpochDay())
+        }
+        return(
+            <>
+                <GuessInput 
+                keyPress={this.handleKeyPress} 
+                items={this.state.items} 
+                search={this.state.search}
+                show={this.state.show}
+                currentSug={this.state.currentSug}
+                handleSearch={this.handleSearch}
+                handleSuggestionClick={this.handleSuggestionClick}
+                handleFocusOut={this.handleFocusOut}/>
+                <Guesses guesses={this.state.guesses} answer={this.state.answer}/>
+            </>
+        )
     }
 }
 
